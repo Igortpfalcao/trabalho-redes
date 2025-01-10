@@ -1,23 +1,21 @@
 import socket
 
-def start_client( host = '127.0.0.1', port = 5000):
-    clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    clientSocket.connect((host, port))
-    print(f"Conectado ao servidor: host: {host}, porta: {port}")
+def start_client(server_host='127.0.0.1', server_port=5000):
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    client_socket.connect((server_host, server_port))
 
     try:
         while True:
-            message = input(f"Digite uma mensagem (ou \"sair\" para encerrar): ")
-            if message.lower() == 'sair':
+            server_message = client_socket.recv(1024).decode()
+            if not server_message:
                 break
-            clientSocket.send(message.encode('utf-8'))
-            response = clientSocket.recv(1024).decode('utf-8')
-            print(f"Resposta do servidor: {response}")
-    except Exception as e:
-        print(f"Error: {e}")
+            print(server_message, end="")
+            client_input = input()
+            client_socket.sendall(client_input.encode())
+    except KeyboardInterrupt:
+        print("\nEncerrando cliente.")
     finally:
-        clientSocket.close()
-        print("Conexão encerrada")
+        client_socket.close()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     start_client()
