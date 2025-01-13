@@ -11,6 +11,7 @@ def logEvent(message):
     logging.info(message)
 
 usersFile = 'users.json'
+roomsFIle = 'salas.json'
 
 def loadUsers():
     if not os.path.exists(usersFile ):
@@ -36,21 +37,29 @@ def authenticateUser(username, password):
     hashedPassword = hashlib.sha512(password.encode()).hexdigest()
     return username in users and users[username] == hashedPassword
 
+def loadRooms(roomsFIle):
+    
 
-def handle_client(client_socket, client_address):
+
+def broadcastChat(client_socket, client_address):
+
+
+def handle_client(client_socket, client_address, login):
     logEvent(f"Cliente conectado: {client_address}")
-    try:
+    try: 
         while True:
-            message = client_socket.recv(1024).decode('utf-8')
-            if not message:
-                logEvent(f"Cliente desconectado: {client_address}")
-                break
-            logEvent(f"Mensagem de {client_address}: {message}")
-            client_socket.send(f"Echo: {message}".encode('utf-8'))
+            client_socket.send(b"Você está conectado, por favor escolha uma opção\n\n1: Chat broadcast\n2: chat privado\n\n")
+            option = client_socket.recv(1024).decode().strip()
+            if option == "1":
+                
+            elif option == "2":
+
+            else:
+                client_socket.sendall(b"Credencial invalida, tente novamente")
+                logEvent(f"Tentativa mal sucedida ao tratar o cliente {Login}")
     except Exception as e:
-        logEvent(f"Erro com o cliente {client_address}: {e}")
-    finally:
-        client_socket.close()
+            logEvent(f"Erro ao lidar com o cliente {client_address}: {e}")
+
 
 def boasVindas(client_socket, client_address):
     authenticated = False
@@ -73,7 +82,7 @@ def boasVindas(client_socket, client_address):
 
                 else:
                     client_socket.sendall(b"Credencial invalida, tente novamente")
-                    logEvent(f"Tentativa de login malsucedido para {username} partindo de {client_address}")
+                    logEvent(f"Tentativa de login malsucedido para {username} partindo de {client_address}\n")
 
             elif option == "2":  
                 client_socket.sendall(b"Escolha um nome de usuario: ")
@@ -89,8 +98,8 @@ def boasVindas(client_socket, client_address):
 
         except Exception as e:
             logEvent(f"Erro ao lidar com o cliente {client_address}: {e}")
-
-    handle_client(client_socket, client_address)
+   
+    handle_client(client_socket, client_address, username)
 
 
 
