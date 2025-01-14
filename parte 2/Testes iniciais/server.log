@@ -1,0 +1,15 @@
+2025-01-14 10:16:03,461 - Servidor iniciado em 127.0.0.1:5000
+2025-01-14 10:16:03,461 - Aguardando conexões...
+2025-01-14 10:16:06,400 - Nova conexão: ('127.0.0.1', 38227)
+2025-01-14 10:16:06,401 - Conexões ativas: 1
+2025-01-14 10:16:06,401 - Aguardando conexões...
+2025-01-14 10:16:08,272 - Erro com o cliente ('127.0.0.1', 38227): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-14 10:16:13,248 - Nova conexão: ('127.0.0.1', 38234)
+2025-01-14 10:16:13,248 - Conexões ativas: 1
+2025-01-14 10:16:13,248 - Aguardando conexões...
+2025-01-14 10:16:19,488 - Nova conexão: ('127.0.0.1', 38236)
+2025-01-14 10:16:19,491 - Conexões ativas: 2
+2025-01-14 10:16:19,492 - Aguardando conexões...
+2025-01-14 10:17:13,826 - Novo usuário registrado: Igor
+2025-01-14 10:17:19,086 - Cliente desconectado: ('127.0.0.1', 38234)
+2025-01-14 10:17:20,084 - Cliente desconectado: ('127.0.0.1', 38236)

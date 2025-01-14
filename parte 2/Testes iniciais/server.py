@@ -56,8 +56,10 @@ def handleLoginAndRegister(client_socket, client_address):
                     username, password = args
                     if authenticateUser(username, password):
                         response = 'Login bem sucedido'
+                        logEvent(f"Novo login do usuário {username} a partir do endereço {client_address}")
                     else:
-                        response = "Erro: Login ou senha incorretos" 
+                        response = "Erro: Login ou senha incorretos"
+                        logEvent(f"tentativa falha de login a partir do endereço {client_address}") 
                 else:
                     response = "Erro: Número de argumentos inválido para login"
 
@@ -72,6 +74,7 @@ def handleLoginAndRegister(client_socket, client_address):
                     response = "Erro: Número de argumentos inválido para login"
             
             client_socket.sendall(response.encode('utf-8'))
+
     except Exception as e:
         logEvent(f"Erro com o cliente {client_address}: {e}")
     finally:
