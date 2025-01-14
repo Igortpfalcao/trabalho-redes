@@ -11,6 +11,7 @@ def logEvent(message):
     logging.info(message)
 
 usersFile = 'users.json'
+roomsFIle = 'salas.json'
 
 def loadUsers():
     if not os.path.exists(usersFile ):
@@ -71,12 +72,10 @@ def handleLoginAndRegister(client_socket, client_address):
                     response = "Erro: Número de argumentos inválido para login"
             
             client_socket.sendall(response.encode('utf-8'))
-                
     except Exception as e:
         logEvent(f"Erro com o cliente {client_address}: {e}")
     finally:
         client_socket.close()
-
 
 def start_server(host='127.0.0.1', port=5000):
     try:
