@@ -25,75 +25,57 @@ def saveUsers(users):
 def registerUser(username, password):
     users = loadUsers()
     if username in users:
-        return False, "Login já existe"
+        logEvent(f"Usuário não registrado (usuário já existente): {username}")
+        return False
     hashedPassword = hashlib.sha512(password.encode()).hexdigest()
     users[username] = hashedPassword  
     saveUsers(users)
-    return True, "Usuário cadastrado com sucesso."  
+    logEvent(f"Novo usuário registrado: {username}")
+    return True 
 
 def authenticateUser(username, password):
     users = loadUsers()
     hashedPassword = hashlib.sha512(password.encode()).hexdigest()
     return username in users and users[username] == hashedPassword
 
-
-def handle_client(client_socket, client_address):
-    logEvent(f"Cliente conectado: {client_address}")
+def handleLoginAndRegister(client_socket, client_address):
     try:
         while True:
-            message = client_socket.recv(1024).decode('utf-8')
-            if not message:
+            request = client_socket.recv(1024).decode('utf-8').strip()
+            if not request:
                 logEvent(f"Cliente desconectado: {client_address}")
                 break
-            logEvent(f"Mensagem de {client_address}: {message}")
-            client_socket.send(f"Echo: {message}".encode('utf-8'))
+
+            request = request.split()
+            command = request[0]
+            args = request[1:]
+
+            if command == "LOGIN":
+                if len(args) == 2:
+                    username, password = args
+                    if authenticateUser(username, password):
+                        response = 'Login bem sucedido'
+                    else:
+                        response = "Erro: Login ou senha incorretos" 
+                else:
+                    response = "Erro: Número de argumentos inválido para login"
+
+            elif command == "REGISTER":
+                if len(args) == 2:
+                    username, password = args
+                    if registerUser(username, password):
+                        response = "Usuário cadastrado com sucesso."
+                    else:
+                        response = "Erro: Usuário já está em uso"
+                else:
+                    response = "Erro: Número de argumentos inválido para login"
+            
+            client_socket.sendall(response.encode('utf-8'))
+                
     except Exception as e:
         logEvent(f"Erro com o cliente {client_address}: {e}")
     finally:
         client_socket.close()
-
-def boasVindas(client_socket, client_address):
-    authenticated = False
-
-    while not authenticated:
-        try:
-            client_socket.sendall(b"Boas vindas! Escolha uma opcao: \n1. Login\n2. Registrar\nEscolha: ")
-            option = client_socket.recv(1024).decode().strip()
-
-            if option == "1":
-                client_socket.sendall(b"Login: ")
-                username = client_socket.recv(1024).decode().strip()
-                client_socket.sendall(b"Senha: ")
-                password = client_socket.recv(1024).decode().strip()
-
-                if authenticateUser(username, password):
-                    client_socket.sendall(b"Login bem sucedido!\n")
-                    logEvent(f"Usuário {username} autenticado de {client_address}")
-                    authenticated = True
-
-                else:
-                    client_socket.sendall(b"Credencial invalida, tente novamente")
-                    logEvent(f"Tentativa de login malsucedido para {username} partindo de {client_address}")
-
-            elif option == "2":  
-                client_socket.sendall(b"Escolha um nome de usuario: ")
-                username = client_socket.recv(1024).decode().strip()
-                client_socket.sendall(b"Escolha uma senha: ")
-                password = client_socket.recv(1024).decode().strip()
-
-                success, message = registerUser(username, password)
-                client_socket.sendall(f"{message}\n".encode())
-                logEvent(f"Tentativa de cadastro para {username}: {message}")   
-            else:
-                client_socket.sendall(b"Opcao invalida, tente novamente")
-
-        except Exception as e:
-            logEvent(f"Erro ao lidar com o cliente {client_address}: {e}")
-
-    handle_client(client_socket, client_address)
-
-
-
 
 
 def start_server(host='127.0.0.1', port=5000):
@@ -107,7 +89,7 @@ def start_server(host='127.0.0.1', port=5000):
             logEvent("Aguardando conexões...")
             client_socket, client_address = server_socket.accept()
             logEvent(f"Nova conexão: {client_address}")
-            thread = threading.Thread(target=boasVindas, args=(client_socket, client_address))
+            thread = threading.Thread(target=handleLoginAndRegister, args=(client_socket, client_address))
             thread.start()
             logEvent(f"Conexões ativas: {threading.active_count() - 1}")
 
