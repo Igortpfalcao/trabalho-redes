@@ -12,6 +12,7 @@ def logEvent(message):
 
 usersFile = 'users.json'
 roomsFIle = 'salas.json'
+connectedClients = {}
 
 def loadUsers():
     if not os.path.exists(usersFile ):
@@ -57,6 +58,7 @@ def handleLoginAndRegister(client_socket, client_address):
                     if authenticateUser(username, password):
                         response = 'Login bem sucedido'
                         logEvent(f"Novo login do usuário {username} a partir do endereço {client_address}")
+                        connectedClients[username] = client_socket
                     else:
                         response = "Erro: Login ou senha incorretos"
                         logEvent(f"tentativa falha de login a partir do endereço {client_address}") 

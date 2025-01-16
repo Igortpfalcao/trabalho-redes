@@ -24,28 +24,28 @@ def login():
     username = username_entry.get()
     password = password_entry.get()
     if not username or not password:
-        messagebox.showerror("Por favor, preencha todos os campos.")
+        messagebox.showerror("Erro", "Por favor, preencha todos os campos.")
         return
 
     response = sendToServer(f"LOGIN {username} {password}")
     if ('Login bem sucedido') in response:
-        messagebox.showinfo("Login realizado com sucesso")
+        messagebox.showinfo("Sucesso", "Login realizado com sucesso")
         #inserir janela de chat
     else:
-        messagebox.showerror("Login ou senha incorreto, tente novamente.")
+        messagebox.showerror("Erro", "Login ou senha incorreto, tente novamente.")
 
 def register(): 
     username = username_entry.get()
     password = password_entry.get()
     if not username or not password:
-        messagebox.showerror("Por favor, preencha todos os campos.")
+        messagebox.showerror("Erro", "Por favor, preencha todos os campos.")
         return
     
     response = sendToServer(f'REGISTER {username} {password}')
     if "Usuário cadastrado" in response:
-        messagebox.showinfo("Usuário cadastrado com sucesso")
+        messagebox.showinfo("sucesso", "Usuário cadastrado com sucesso")
     else:
-        messagebox.showerror("O nome de usuário já está em uso.")
+        messagebox.showerror("Erro", "O nome de usuário já está em uso.")
 
 frame = tk.Frame(root)
 frame.pack(pady=20, padx=20)
