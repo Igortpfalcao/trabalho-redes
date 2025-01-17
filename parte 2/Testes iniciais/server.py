@@ -32,10 +32,30 @@ def saveMessage(sender, recipient, content):
     messages[recipient].append({"sender": sender, "content": content})
     saveMessages(messages)
 
-def getMessagesForUser(username):
-    userMessages = messages.get(username, [])
-    saveMessages(messages)
-    return userMessages
+def getMessages(userName, selectedUsers):
+    result = {}
+    data = loadMessages()  # Carrega as mensagens do arquivo
+
+    for user in selectedUsers:
+        messages = []
+
+        # Verificando as mensagens enviadas pelo userName para cada usuário
+        if userName in data:
+            for msg in data[userName]:
+                if msg['sender'] == userName:
+                    messages.append(msg)
+
+        # Verificando as mensagens recebidas de cada usuário para o userName
+        if user in data:
+            for msg in data[user]:
+                if msg['sender'] == userName:
+                    messages.append(msg)
+
+        # Se houver mensagens, adicionar ao resultado
+        if messages:
+            result[user] = messages
+
+    return result
 
 def loadUsers():
     if not os.path.exists(usersFile ):
@@ -89,7 +109,7 @@ def handleClient(client_socket, client_address):
                 else:
                     response = "Erro: Número de argumentos inválido para login"
 
-            elif command == "REGISTER":
+            elif command == "REGISTER": 
                 if len(args) == 2:
                     username, password = args
                     if registerUser(username, password):
@@ -100,10 +120,13 @@ def handleClient(client_socket, client_address):
                     response = "Erro: Número de argumentos inválido para login"
             
             elif command == "GET_MESSAGES":
-                if len(args) == 1:
+                if len(args) == 2:
                     username = args[0]
-                    userMessages = getMessagesForUser(username)
+                    selectedUser = args[1]
+                    userMessages = getMessages(username, selectedUser)
+                    logEvent(f"USERMESSAGES: {userMessages}")
                     response = json.dumps(userMessages)
+                    logEvent(f"JSON ENVIADO: {response}")
                 else:
                     response = "Erro: Número de argumentos inválido para este processo."
 

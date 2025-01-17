@@ -595,3 +595,110 @@
 2025-01-17 10:47:38,361 - Aguardando conexões...
 2025-01-17 10:47:47,522 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 36543)
 2025-01-17 10:48:01,073 - Erro com o cliente ('127.0.0.1', 36543): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 11:33:52,407 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 11:33:52,419 - Aguardando conexões...
+2025-01-17 11:33:54,929 - Nova conexão: ('127.0.0.1', 21654)
+2025-01-17 11:33:54,937 - Conexões ativas: 1
+2025-01-17 11:33:54,937 - Aguardando conexões...
+2025-01-17 11:34:02,152 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 21654)
+2025-01-17 11:34:17,951 - Erro com o cliente ('127.0.0.1', 21654): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 11:34:20,217 - Nova conexão: ('127.0.0.1', 21657)
+2025-01-17 11:34:20,217 - Conexões ativas: 1
+2025-01-17 11:34:20,218 - Aguardando conexões...
+2025-01-17 11:34:24,919 - tentativa falha de login a partir do endereço ('127.0.0.1', 21657)
+2025-01-17 11:34:27,639 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 21657)
+2025-01-17 11:34:41,945 - Erro com o cliente ('127.0.0.1', 21657): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 11:35:40,467 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 11:35:40,467 - Aguardando conexões...
+2025-01-17 11:35:41,627 - Nova conexão: ('127.0.0.1', 21675)
+2025-01-17 11:35:41,628 - Conexões ativas: 1
+2025-01-17 11:35:41,628 - Aguardando conexões...
+2025-01-17 11:35:46,719 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 21675)
+2025-01-17 11:36:04,713 - Erro com o cliente ('127.0.0.1', 21675): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 11:43:50,251 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-17 11:43:50,251 - Servidor encerrado.
+2025-01-17 11:43:54,374 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 11:43:54,374 - Aguardando conexões...
+2025-01-17 11:43:56,087 - Nova conexão: ('127.0.0.1', 21732)
+2025-01-17 11:43:56,088 - Conexões ativas: 1
+2025-01-17 11:43:56,088 - Aguardando conexões...
+2025-01-17 11:44:04,248 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 21732)
+2025-01-17 11:44:20,277 - Erro com o cliente ('127.0.0.1', 21732): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 11:45:28,267 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 11:45:28,268 - Aguardando conexões...
+2025-01-17 11:45:29,557 - Nova conexão: ('127.0.0.1', 21745)
+2025-01-17 11:45:29,558 - Conexões ativas: 1
+2025-01-17 11:45:29,558 - Aguardando conexões...
+2025-01-17 11:45:39,608 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 21745)
+2025-01-17 11:46:36,214 - Erro com o cliente ('127.0.0.1', 21745): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 11:47:49,270 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-17 11:47:49,270 - Servidor encerrado.
+2025-01-17 11:47:53,701 - Nova conexão: ('127.0.0.1', 21766)
+2025-01-17 11:47:53,702 - Conexões ativas: 1
+2025-01-17 11:47:53,702 - Aguardando conexões...
+2025-01-17 11:47:59,400 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 21766)
+2025-01-17 11:48:04,833 - Destinatário offline: Pedro
+2025-01-17 11:48:11,745 - Destinatário offline: Pedro
+2025-01-17 11:48:20,911 - Nova conexão: ('127.0.0.1', 21768)
+2025-01-17 11:48:20,911 - Conexões ativas: 2
+2025-01-17 11:48:20,912 - Aguardando conexões...
+2025-01-17 11:48:27,120 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 21768)
+2025-01-17 11:48:39,593 - Destinatário offline: Felipe
+2025-01-17 11:48:47,904 - Erro com o cliente ('127.0.0.1', 21768): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 11:48:48,790 - Erro com o cliente ('127.0.0.1', 21766): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 12:28:59,398 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 12:28:59,398 - Aguardando conexões...
+2025-01-17 12:29:00,649 - Nova conexão: ('127.0.0.1', 45103)
+2025-01-17 12:29:00,650 - Conexões ativas: 1
+2025-01-17 12:29:00,650 - Aguardando conexões...
+2025-01-17 12:29:07,811 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 45103)
+2025-01-17 12:29:20,440 - Erro com o cliente ('127.0.0.1', 45103): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 12:31:17,042 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 12:31:17,043 - Aguardando conexões...
+2025-01-17 12:31:18,339 - Nova conexão: ('127.0.0.1', 45121)
+2025-01-17 12:31:18,340 - Conexões ativas: 1
+2025-01-17 12:31:18,340 - Aguardando conexões...
+2025-01-17 12:31:23,427 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 45121)
+2025-01-17 12:31:33,964 - Erro com o cliente ('127.0.0.1', 45121): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 12:32:04,500 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 12:32:04,500 - Aguardando conexões...
+2025-01-17 12:32:05,767 - Nova conexão: ('127.0.0.1', 45124)
+2025-01-17 12:32:05,768 - Conexões ativas: 1
+2025-01-17 12:32:05,768 - Aguardando conexões...
+2025-01-17 12:32:10,691 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 45124)
+2025-01-17 12:32:25,553 - Erro com o cliente ('127.0.0.1', 45124): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 12:32:29,339 - Nova conexão: ('127.0.0.1', 45128)
+2025-01-17 12:32:29,340 - Conexões ativas: 1
+2025-01-17 12:32:29,340 - Aguardando conexões...
+2025-01-17 12:32:34,499 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 45128)
+2025-01-17 12:32:46,411 - Erro com o cliente ('127.0.0.1', 45128): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 12:32:52,442 - Nova conexão: ('127.0.0.1', 45130)
+2025-01-17 12:32:52,442 - Conexões ativas: 1
+2025-01-17 12:32:52,442 - Aguardando conexões...
+2025-01-17 12:32:56,987 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 45130)
+2025-01-17 12:33:09,517 - Erro com o cliente ('127.0.0.1', 45130): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 12:38:14,384 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 12:38:14,385 - Aguardando conexões...
+2025-01-17 12:38:16,022 - Nova conexão: ('127.0.0.1', 45172)
+2025-01-17 12:38:16,023 - Conexões ativas: 1
+2025-01-17 12:38:16,023 - Aguardando conexões...
+2025-01-17 12:38:29,364 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 45172)
+2025-01-17 12:38:31,367 - JSON ENVIADO: {}
+2025-01-17 12:39:26,914 - Erro com o cliente ('127.0.0.1', 45172): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 12:39:30,739 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 12:39:30,739 - Aguardando conexões...
+2025-01-17 12:39:31,744 - Nova conexão: ('127.0.0.1', 45181)
+2025-01-17 12:39:31,745 - Conexões ativas: 1
+2025-01-17 12:39:31,745 - Aguardando conexões...
+2025-01-17 12:39:38,868 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 45181)
+2025-01-17 12:39:42,335 - USERMESSAGES: {}
+2025-01-17 12:39:42,335 - JSON ENVIADO: {}
+2025-01-17 12:43:29,327 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 12:43:29,328 - Aguardando conexões...
+2025-01-17 12:43:30,209 - Nova conexão: ('127.0.0.1', 45222)
+2025-01-17 12:43:30,211 - Conexões ativas: 1
+2025-01-17 12:43:30,211 - Aguardando conexões...
+2025-01-17 12:43:40,717 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 45222)
+2025-01-17 12:43:42,911 - USERMESSAGES: {}
+2025-01-17 12:43:42,912 - JSON ENVIADO: {}
+2025-01-17 12:43:57,218 - Erro com o cliente ('127.0.0.1', 45222): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto

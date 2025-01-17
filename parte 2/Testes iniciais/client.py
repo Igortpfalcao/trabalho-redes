@@ -86,34 +86,41 @@ def updateChatText(chatText, message):
     chatText.insert('end', message + '\n')
     chatText.configure(state='disabled')
 
-def sendMessage(sender, recipientEntry, messageEntry):
-    recipient = recipientEntry.get().strip()
+def sendMessage(sender, selectedUser, messageEntry):
     message = messageEntry.get().strip()
 
-    if not recipient or not message:
+    if not selectedUser or not message:
         messagebox.showerror("Erro", "Por favor, preencha todos os campos.")
         return
 
     def send_message_thread():
-        sendToServer(f"MESSAGE {sender} {recipient} {message}")
-        messageEntry.delete(0, 'end')
+        sendToServer(f"MESSAGE {sender} {selectedUser} {message}")
+        messageEntry.delete(0, 'end')   
 
     threading.Thread(target=send_message_thread, daemon=True).start()
 
-def loadPreviousMessages(username, chat_text):
-    response = sendToServer(f"GET_MESSAGES {username}")
-    if response.strip() == "[]":  
-        messagebox.showinfo("Informação", "Nenhuma mensagem encontrada.")
-        return
-    
-    try:
-        messages = json.loads(response)  
-        chat_text.configure(state='normal')
+def formatMessages(chatText, userName, selectedUser):
+    response = sendToServer(f"GET_MESSAGES {userName} {selectedUser}")
+    data = json.loads(response)
+    messages = []
+
+    if selectedUser in data:
+        for msg in data[selectedUser]:
+            if msg['sender'] == userName:
+                messages.append(f"Você: {msg['content']}")
+
+    if userName in data:
+        for msg in data[userName]:
+            if msg['sender'] == selectedUser:
+                messages.append(f"{selectedUser}: {msg['content']}")
+
+    def formatMessagesThread():
         for message in messages:
-            chat_text.insert('end', f"{message['sender']}: {message['content']}\n")
-        chat_text.configure(state='disabled')
-    except json.JSONDecodeError:
-        messagebox.showerror("Erro", f"Resposta do servidor inválida: {response}")
+            chatText.insert('end', message, "\n")
+
+    threading.Thread(target=formatMessagesThread, daemon=True).start()
+
+    return messages
 
 def updateUserList(userListbox, username):
     def updateUserListThread():
@@ -142,24 +149,32 @@ def openChatWindow(username):
 
     tk.Button(userFrame, text="Atualizar", command=lambda: updateUserList(userListBox, username)).pack(pady=5)
 
+    chatFrame = tk.Frame(chatWindow)
+    chatFrame.pack(side='right', fill='both', expand=True)
     
-    recipient_label = tk.Label(chatWindow, text="Destinatário:")
+    recipient_label = tk.Label(chatFrame, text="Conversa com:")
     recipient_label.pack(pady=(10, 0))
     
-    recipientEntry = tk.Entry(chatWindow)
-    recipientEntry.pack(padx=10, pady=5, fill='x')
-    
-    chatText = tk.Text(chatWindow, state='disabled', wrap='word', bg='lightgray', fg='black')
+    chatText = tk.Text(chatFrame, state='disabled', wrap='word', bg='lightgray', fg='black')
     chatText.pack(padx=10, pady=10, fill='both', expand=True)
     
-    messageEntry = tk.Entry(chatWindow)
+    messageEntry = tk.Entry(chatFrame)
     messageEntry.pack(padx=10, pady=(0, 10), fill='x', side='left', expand=True)
     
-    sendButton = tk.Button(chatWindow, text="Enviar", command=lambda: sendMessage(username, recipientEntry, messageEntry))
+    sendButton = tk.Button(chatFrame, text="Enviar", state='disabled')
     sendButton.pack(padx=10, pady=(0, 10), side='right')
     
-    loadPreviousMessages(username, chatText)
+    def onUserSelect(event):
+        selectedUser = userListBox.get(userListBox.curselection())
+        recipient_label.config(text=f"Conversa com: {selectedUser}")
+        sendButton.config(state='normal', command=lambda: sendMessage(username, selectedUser, messageEntry))
+        formatMessages(chatText, username, selectedUser)
 
+
+    userListBox.bind('<<ListboxSelect>>', onUserSelect)
+
+    updateUserList(userListBox, username)
+    
     threading.Thread(target=listenForMessages, args=(chatText,) , daemon=True).start()
 
     chatWindow.mainloop()
