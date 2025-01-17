@@ -1,431 +1,597 @@
 2025-01-14 10:16:03,461 - Servidor iniciado em 127.0.0.1:5000
-2025-01-14 10:16:03,461 - Aguardando conexões...
-2025-01-14 10:16:06,400 - Nova conexão: ('127.0.0.1', 38227)
-2025-01-14 10:16:06,401 - Conexões ativas: 1
-2025-01-14 10:16:06,401 - Aguardando conexões...
-2025-01-14 10:16:08,272 - Erro com o cliente ('127.0.0.1', 38227): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-14 10:16:13,248 - Nova conexão: ('127.0.0.1', 38234)
-2025-01-14 10:16:13,248 - Conexões ativas: 1
-2025-01-14 10:16:13,248 - Aguardando conexões...
-2025-01-14 10:16:19,488 - Nova conexão: ('127.0.0.1', 38236)
-2025-01-14 10:16:19,491 - Conexões ativas: 2
-2025-01-14 10:16:19,492 - Aguardando conexões...
-2025-01-14 10:17:13,826 - Novo usuário registrado: Igor
+2025-01-14 10:16:03,461 - Aguardando conexï¿½es...
+2025-01-14 10:16:06,400 - Nova conexï¿½o: ('127.0.0.1', 38227)
+2025-01-14 10:16:06,401 - Conexï¿½es ativas: 1
+2025-01-14 10:16:06,401 - Aguardando conexï¿½es...
+2025-01-14 10:16:08,272 - Erro com o cliente ('127.0.0.1', 38227): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-14 10:16:13,248 - Nova conexï¿½o: ('127.0.0.1', 38234)
+2025-01-14 10:16:13,248 - Conexï¿½es ativas: 1
+2025-01-14 10:16:13,248 - Aguardando conexï¿½es...
+2025-01-14 10:16:19,488 - Nova conexï¿½o: ('127.0.0.1', 38236)
+2025-01-14 10:16:19,491 - Conexï¿½es ativas: 2
+2025-01-14 10:16:19,492 - Aguardando conexï¿½es...
+2025-01-14 10:17:13,826 - Novo usuï¿½rio registrado: Igor
 2025-01-14 10:17:19,086 - Cliente desconectado: ('127.0.0.1', 38234)
 2025-01-14 10:17:20,084 - Cliente desconectado: ('127.0.0.1', 38236)
 2025-01-16 20:42:39,915 - Servidor iniciado em 127.0.0.1:5000
-2025-01-16 20:42:39,916 - Aguardando conexões...
-2025-01-16 20:42:45,486 - Nova conexão: ('127.0.0.1', 62576)
-2025-01-16 20:42:45,487 - Conexões ativas: 1
-2025-01-16 20:42:45,487 - Aguardando conexões...
-2025-01-16 20:43:09,039 - Usuário não registrado (usuário já existente): Zeroapenas
-2025-01-16 20:43:14,984 - Novo usuário registrado: ZeroApenas
-2025-01-16 20:43:17,889 - Novo login do usuário ZeroApenas a partir do endereço ('127.0.0.1', 62576)
+2025-01-16 20:42:39,916 - Aguardando conexï¿½es...
+2025-01-16 20:42:45,486 - Nova conexï¿½o: ('127.0.0.1', 62576)
+2025-01-16 20:42:45,487 - Conexï¿½es ativas: 1
+2025-01-16 20:42:45,487 - Aguardando conexï¿½es...
+2025-01-16 20:43:09,039 - Usuï¿½rio nï¿½o registrado (usuï¿½rio jï¿½ existente): Zeroapenas
+2025-01-16 20:43:14,984 - Novo usuï¿½rio registrado: ZeroApenas
+2025-01-16 20:43:17,889 - Novo login do usuï¿½rio ZeroApenas a partir do endereï¿½o ('127.0.0.1', 62576)
 2025-01-16 20:43:22,955 - Cliente desconectado: ('127.0.0.1', 62576)
 2025-01-16 22:59:26,667 - Servidor iniciado em 127.0.0.1:5000
-2025-01-16 22:59:26,668 - Aguardando conexões...
-2025-01-16 22:59:29,447 - Nova conexão: ('127.0.0.1', 64608)
-2025-01-16 22:59:29,448 - Conexões ativas: 1
-2025-01-16 22:59:29,448 - Aguardando conexões...
-2025-01-16 22:59:37,883 - Novo login do usuário ZeroApenas a partir do endereço ('127.0.0.1', 64608)
+2025-01-16 22:59:26,668 - Aguardando conexï¿½es...
+2025-01-16 22:59:29,447 - Nova conexï¿½o: ('127.0.0.1', 64608)
+2025-01-16 22:59:29,448 - Conexï¿½es ativas: 1
+2025-01-16 22:59:29,448 - Aguardando conexï¿½es...
+2025-01-16 22:59:37,883 - Novo login do usuï¿½rio ZeroApenas a partir do endereï¿½o ('127.0.0.1', 64608)
 2025-01-16 22:59:39,006 - Cliente desconectado: ('127.0.0.1', 64608)
 2025-01-16 23:00:54,227 - Servidor iniciado em 127.0.0.1:5000
-2025-01-16 23:00:54,227 - Aguardando conexões...
-2025-01-16 23:00:56,463 - Nova conexão: ('127.0.0.1', 64639)
-2025-01-16 23:00:56,464 - Conexões ativas: 1
-2025-01-16 23:00:56,464 - Aguardando conexões...
-2025-01-16 23:01:04,736 - Novo login do usuário ZeroApenas a partir do endereço ('127.0.0.1', 64639)
+2025-01-16 23:00:54,227 - Aguardando conexï¿½es...
+2025-01-16 23:00:56,463 - Nova conexï¿½o: ('127.0.0.1', 64639)
+2025-01-16 23:00:56,464 - Conexï¿½es ativas: 1
+2025-01-16 23:00:56,464 - Aguardando conexï¿½es...
+2025-01-16 23:01:04,736 - Novo login do usuï¿½rio ZeroApenas a partir do endereï¿½o ('127.0.0.1', 64639)
 2025-01-16 23:01:05,733 - Cliente desconectado: ('127.0.0.1', 64639)
-2025-01-16 23:01:18,011 - Nova conexão: ('127.0.0.1', 64643)
-2025-01-16 23:01:18,011 - Conexões ativas: 1
-2025-01-16 23:01:18,011 - Aguardando conexões...
-2025-01-16 23:01:25,399 - Novo login do usuário ZeroApenas a partir do endereço ('127.0.0.1', 64643)
+2025-01-16 23:01:18,011 - Nova conexï¿½o: ('127.0.0.1', 64643)
+2025-01-16 23:01:18,011 - Conexï¿½es ativas: 1
+2025-01-16 23:01:18,011 - Aguardando conexï¿½es...
+2025-01-16 23:01:25,399 - Novo login do usuï¿½rio ZeroApenas a partir do endereï¿½o ('127.0.0.1', 64643)
 2025-01-16 23:01:30,729 - Cliente desconectado: ('127.0.0.1', 64643)
 2025-01-16 23:05:16,068 - Servidor iniciado em 127.0.0.1:5000
-2025-01-16 23:05:16,069 - Aguardando conexões...
-2025-01-16 23:05:18,466 - Nova conexão: ('127.0.0.1', 64776)
-2025-01-16 23:05:18,467 - Conexões ativas: 1
-2025-01-16 23:05:18,467 - Aguardando conexões...
-2025-01-16 23:05:27,652 - Novo login do usuário ZeroApenas a partir do endereço ('127.0.0.1', 64776)
+2025-01-16 23:05:16,069 - Aguardando conexï¿½es...
+2025-01-16 23:05:18,466 - Nova conexï¿½o: ('127.0.0.1', 64776)
+2025-01-16 23:05:18,467 - Conexï¿½es ativas: 1
+2025-01-16 23:05:18,467 - Aguardando conexï¿½es...
+2025-01-16 23:05:27,652 - Novo login do usuï¿½rio ZeroApenas a partir do endereï¿½o ('127.0.0.1', 64776)
 2025-01-16 23:06:34,461 - Cliente desconectado: ('127.0.0.1', 64776)
 2025-01-16 23:47:10,405 - Servidor iniciado em 127.0.0.1:5000
-2025-01-16 23:47:10,405 - Aguardando conexões...
-2025-01-16 23:47:21,942 - Nova conexão: ('127.0.0.1', 65385)
-2025-01-16 23:47:21,943 - Conexões ativas: 1
-2025-01-16 23:47:21,943 - Aguardando conexões...
-2025-01-16 23:47:40,837 - Novo usuário registrado: Pedro
-2025-01-16 23:47:42,727 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 65385)
-2025-01-16 23:48:14,494 - Nova conexão: ('127.0.0.1', 65390)
-2025-01-16 23:48:14,494 - Conexões ativas: 2
-2025-01-16 23:48:14,494 - Aguardando conexões...
-2025-01-16 23:48:27,244 - Novo usuário registrado: Felipe
-2025-01-16 23:48:29,973 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 65390)
+2025-01-16 23:47:10,405 - Aguardando conexï¿½es...
+2025-01-16 23:47:21,942 - Nova conexï¿½o: ('127.0.0.1', 65385)
+2025-01-16 23:47:21,943 - Conexï¿½es ativas: 1
+2025-01-16 23:47:21,943 - Aguardando conexï¿½es...
+2025-01-16 23:47:40,837 - Novo usuï¿½rio registrado: Pedro
+2025-01-16 23:47:42,727 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 65385)
+2025-01-16 23:48:14,494 - Nova conexï¿½o: ('127.0.0.1', 65390)
+2025-01-16 23:48:14,494 - Conexï¿½es ativas: 2
+2025-01-16 23:48:14,494 - Aguardando conexï¿½es...
+2025-01-16 23:48:27,244 - Novo usuï¿½rio registrado: Felipe
+2025-01-16 23:48:29,973 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 65390)
 2025-01-16 23:49:13,308 - Cliente desconectado: ('127.0.0.1', 65385)
 2025-01-16 23:49:13,985 - Cliente desconectado: ('127.0.0.1', 65390)
 2025-01-16 23:50:22,601 - Servidor iniciado em 127.0.0.1:5000
-2025-01-16 23:50:22,601 - Aguardando conexões...
-2025-01-16 23:50:25,185 - Nova conexão: ('127.0.0.1', 65414)
-2025-01-16 23:50:25,186 - Conexões ativas: 1
-2025-01-16 23:50:25,186 - Aguardando conexões...
-2025-01-16 23:50:33,674 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 65414)
+2025-01-16 23:50:22,601 - Aguardando conexï¿½es...
+2025-01-16 23:50:25,185 - Nova conexï¿½o: ('127.0.0.1', 65414)
+2025-01-16 23:50:25,186 - Conexï¿½es ativas: 1
+2025-01-16 23:50:25,186 - Aguardando conexï¿½es...
+2025-01-16 23:50:33,674 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 65414)
 2025-01-16 23:54:07,766 - Cliente desconectado: ('127.0.0.1', 65414)
 2025-01-16 23:55:47,765 - Servidor iniciado em 127.0.0.1:5000
-2025-01-16 23:55:47,765 - Aguardando conexões...
-2025-01-16 23:55:50,372 - Nova conexão: ('127.0.0.1', 65484)
-2025-01-16 23:55:50,373 - Conexões ativas: 1
-2025-01-16 23:55:50,373 - Aguardando conexões...
-2025-01-16 23:56:09,438 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 65484)
-2025-01-16 23:56:46,266 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-16 23:55:47,765 - Aguardando conexï¿½es...
+2025-01-16 23:55:50,372 - Nova conexï¿½o: ('127.0.0.1', 65484)
+2025-01-16 23:55:50,373 - Conexï¿½es ativas: 1
+2025-01-16 23:55:50,373 - Aguardando conexï¿½es...
+2025-01-16 23:56:09,438 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 65484)
+2025-01-16 23:56:46,266 - Erro no servidor: [WinError 10048] Normalmente ï¿½ permitida apenas uma utilizaï¿½ï¿½o de cada endereï¿½o de soquete (protocolo/endereï¿½o de rede/porta)
 2025-01-16 23:56:46,266 - Servidor encerrado.
 2025-01-16 23:56:56,695 - Servidor iniciado em 127.0.0.1:5000
-2025-01-16 23:56:56,695 - Aguardando conexões...
-2025-01-16 23:56:59,435 - Nova conexão: ('127.0.0.1', 65503)
-2025-01-16 23:56:59,436 - Conexões ativas: 1
-2025-01-16 23:56:59,436 - Aguardando conexões...
-2025-01-16 23:57:07,205 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 65503)
-2025-01-16 23:57:39,336 - Nova conexão: ('127.0.0.1', 65504)
-2025-01-16 23:57:39,337 - Conexões ativas: 2
-2025-01-16 23:57:39,337 - Aguardando conexões...
-2025-01-16 23:57:45,380 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 65504)
+2025-01-16 23:56:56,695 - Aguardando conexï¿½es...
+2025-01-16 23:56:59,435 - Nova conexï¿½o: ('127.0.0.1', 65503)
+2025-01-16 23:56:59,436 - Conexï¿½es ativas: 1
+2025-01-16 23:56:59,436 - Aguardando conexï¿½es...
+2025-01-16 23:57:07,205 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 65503)
+2025-01-16 23:57:39,336 - Nova conexï¿½o: ('127.0.0.1', 65504)
+2025-01-16 23:57:39,337 - Conexï¿½es ativas: 2
+2025-01-16 23:57:39,337 - Aguardando conexï¿½es...
+2025-01-16 23:57:45,380 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 65504)
 2025-01-16 23:57:53,430 - Cliente desconectado: ('127.0.0.1', 65504)
 2025-01-16 23:58:05,563 - Cliente desconectado: ('127.0.0.1', 65503)
 2025-01-17 00:05:18,784 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 00:05:18,784 - Aguardando conexões...
-2025-01-17 00:05:22,318 - Nova conexão: ('127.0.0.1', 49210)
-2025-01-17 00:05:22,319 - Conexões ativas: 1
-2025-01-17 00:05:22,319 - Aguardando conexões...
-2025-01-17 00:05:35,206 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 49210)
+2025-01-17 00:05:18,784 - Aguardando conexï¿½es...
+2025-01-17 00:05:22,318 - Nova conexï¿½o: ('127.0.0.1', 49210)
+2025-01-17 00:05:22,319 - Conexï¿½es ativas: 1
+2025-01-17 00:05:22,319 - Aguardando conexï¿½es...
+2025-01-17 00:05:35,206 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 49210)
 2025-01-17 00:05:45,504 - Cliente desconectado: ('127.0.0.1', 49210)
-2025-01-17 00:05:48,968 - Nova conexão: ('127.0.0.1', 49211)
-2025-01-17 00:05:48,968 - Conexões ativas: 1
-2025-01-17 00:05:48,968 - Aguardando conexões...
-2025-01-17 00:05:54,454 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 49211)
-2025-01-17 00:07:20,972 - Erro com o cliente ('127.0.0.1', 49211): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 00:05:48,968 - Nova conexï¿½o: ('127.0.0.1', 49211)
+2025-01-17 00:05:48,968 - Conexï¿½es ativas: 1
+2025-01-17 00:05:48,968 - Aguardando conexï¿½es...
+2025-01-17 00:05:54,454 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 49211)
+2025-01-17 00:07:20,972 - Erro com o cliente ('127.0.0.1', 49211): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 00:15:39,499 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 00:15:39,500 - Aguardando conexões...
-2025-01-17 00:15:42,305 - Nova conexão: ('127.0.0.1', 49327)
-2025-01-17 00:15:42,306 - Conexões ativas: 1
-2025-01-17 00:15:42,306 - Aguardando conexões...
-2025-01-17 00:15:48,927 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 49327)
+2025-01-17 00:15:39,500 - Aguardando conexï¿½es...
+2025-01-17 00:15:42,305 - Nova conexï¿½o: ('127.0.0.1', 49327)
+2025-01-17 00:15:42,306 - Conexï¿½es ativas: 1
+2025-01-17 00:15:42,306 - Aguardando conexï¿½es...
+2025-01-17 00:15:48,927 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 49327)
 2025-01-17 00:15:59,364 - Cliente desconectado: ('127.0.0.1', 49327)
 2025-01-17 00:32:29,450 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 00:32:29,450 - Aguardando conexões...
-2025-01-17 00:32:32,134 - Nova conexão: ('127.0.0.1', 49541)
-2025-01-17 00:32:32,135 - Conexões ativas: 1
-2025-01-17 00:32:32,135 - Aguardando conexões...
-2025-01-17 00:32:39,258 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 49541)
-2025-01-17 00:33:22,380 - Erro com o cliente ('127.0.0.1', 49541): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 00:33:30,280 - Nova conexão: ('127.0.0.1', 49549)
-2025-01-17 00:33:30,280 - Conexões ativas: 1
-2025-01-17 00:33:30,280 - Aguardando conexões...
-2025-01-17 00:33:36,385 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 49549)
-2025-01-17 00:33:53,279 - Nova conexão: ('127.0.0.1', 49552)
-2025-01-17 00:33:53,280 - Conexões ativas: 2
-2025-01-17 00:33:53,280 - Aguardando conexões...
-2025-01-17 00:34:07,394 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 49552)
+2025-01-17 00:32:29,450 - Aguardando conexï¿½es...
+2025-01-17 00:32:32,134 - Nova conexï¿½o: ('127.0.0.1', 49541)
+2025-01-17 00:32:32,135 - Conexï¿½es ativas: 1
+2025-01-17 00:32:32,135 - Aguardando conexï¿½es...
+2025-01-17 00:32:39,258 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 49541)
+2025-01-17 00:33:22,380 - Erro com o cliente ('127.0.0.1', 49541): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 00:33:30,280 - Nova conexï¿½o: ('127.0.0.1', 49549)
+2025-01-17 00:33:30,280 - Conexï¿½es ativas: 1
+2025-01-17 00:33:30,280 - Aguardando conexï¿½es...
+2025-01-17 00:33:36,385 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 49549)
+2025-01-17 00:33:53,279 - Nova conexï¿½o: ('127.0.0.1', 49552)
+2025-01-17 00:33:53,280 - Conexï¿½es ativas: 2
+2025-01-17 00:33:53,280 - Aguardando conexï¿½es...
+2025-01-17 00:34:07,394 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 49552)
 2025-01-17 00:34:22,610 - Erro com o cliente ('127.0.0.1', 49549): a bytes-like object is required, not 'str'
-2025-01-17 00:36:09,901 - Erro com o cliente ('127.0.0.1', 49552): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 00:36:09,901 - Erro com o cliente ('127.0.0.1', 49552): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 00:38:31,766 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 00:38:31,766 - Aguardando conexões...
-2025-01-17 00:38:34,454 - Nova conexão: ('127.0.0.1', 49591)
-2025-01-17 00:38:34,456 - Conexões ativas: 1
-2025-01-17 00:38:34,456 - Aguardando conexões...
-2025-01-17 00:38:39,510 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 49591)
-2025-01-17 00:38:56,296 - Nova conexão: ('127.0.0.1', 49592)
-2025-01-17 00:38:56,297 - Conexões ativas: 2
-2025-01-17 00:38:56,297 - Aguardando conexões...
-2025-01-17 00:39:07,566 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 49592)
+2025-01-17 00:38:31,766 - Aguardando conexï¿½es...
+2025-01-17 00:38:34,454 - Nova conexï¿½o: ('127.0.0.1', 49591)
+2025-01-17 00:38:34,456 - Conexï¿½es ativas: 1
+2025-01-17 00:38:34,456 - Aguardando conexï¿½es...
+2025-01-17 00:38:39,510 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 49591)
+2025-01-17 00:38:56,296 - Nova conexï¿½o: ('127.0.0.1', 49592)
+2025-01-17 00:38:56,297 - Conexï¿½es ativas: 2
+2025-01-17 00:38:56,297 - Aguardando conexï¿½es...
+2025-01-17 00:39:07,566 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 49592)
 2025-01-17 00:39:23,918 - Erro com o cliente ('127.0.0.1', 49591): a bytes-like object is required, not 'str'
-2025-01-17 00:40:01,409 - Erro com o cliente ('127.0.0.1', 49592): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 00:40:01,409 - Erro com o cliente ('127.0.0.1', 49592): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 00:43:48,688 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 00:43:48,688 - Aguardando conexões...
-2025-01-17 00:43:51,547 - Nova conexão: ('127.0.0.1', 49636)
-2025-01-17 00:43:51,549 - Conexões ativas: 1
-2025-01-17 00:43:51,549 - Aguardando conexões...
-2025-01-17 00:44:00,409 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 49636)
-2025-01-17 00:44:07,404 - Nova conexão: ('127.0.0.1', 49638)
-2025-01-17 00:44:07,404 - Conexões ativas: 2
-2025-01-17 00:44:07,404 - Aguardando conexões...
-2025-01-17 00:44:17,065 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 49638)
+2025-01-17 00:43:48,688 - Aguardando conexï¿½es...
+2025-01-17 00:43:51,547 - Nova conexï¿½o: ('127.0.0.1', 49636)
+2025-01-17 00:43:51,549 - Conexï¿½es ativas: 1
+2025-01-17 00:43:51,549 - Aguardando conexï¿½es...
+2025-01-17 00:44:00,409 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 49636)
+2025-01-17 00:44:07,404 - Nova conexï¿½o: ('127.0.0.1', 49638)
+2025-01-17 00:44:07,404 - Conexï¿½es ativas: 2
+2025-01-17 00:44:07,404 - Aguardando conexï¿½es...
+2025-01-17 00:44:17,065 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 49638)
 2025-01-17 00:44:31,586 - Erro com o cliente ('127.0.0.1', 49638): a bytes-like object is required, not 'str'
-2025-01-17 00:44:40,254 - Erro com o cliente ('127.0.0.1', 49636): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 00:44:40,254 - Erro com o cliente ('127.0.0.1', 49636): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 00:48:55,094 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 00:48:55,095 - Aguardando conexões...
-2025-01-17 00:48:57,092 - Nova conexão: ('127.0.0.1', 49690)
-2025-01-17 00:48:57,093 - Conexões ativas: 1
-2025-01-17 00:48:57,093 - Aguardando conexões...
-2025-01-17 00:49:05,294 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 49690)
-2025-01-17 00:49:58,587 - Erro com o cliente ('127.0.0.1', 49690): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 00:48:55,095 - Aguardando conexï¿½es...
+2025-01-17 00:48:57,092 - Nova conexï¿½o: ('127.0.0.1', 49690)
+2025-01-17 00:48:57,093 - Conexï¿½es ativas: 1
+2025-01-17 00:48:57,093 - Aguardando conexï¿½es...
+2025-01-17 00:49:05,294 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 49690)
+2025-01-17 00:49:58,587 - Erro com o cliente ('127.0.0.1', 49690): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 00:53:09,142 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 00:53:09,142 - Aguardando conexões...
-2025-01-17 00:53:11,247 - Nova conexão: ('127.0.0.1', 57523)
-2025-01-17 00:53:11,248 - Conexões ativas: 1
-2025-01-17 00:53:11,248 - Aguardando conexões...
-2025-01-17 00:53:16,851 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 57523)
-2025-01-17 00:53:25,571 - Erro com o cliente ('127.0.0.1', 57523): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 00:53:09,142 - Aguardando conexï¿½es...
+2025-01-17 00:53:11,247 - Nova conexï¿½o: ('127.0.0.1', 57523)
+2025-01-17 00:53:11,248 - Conexï¿½es ativas: 1
+2025-01-17 00:53:11,248 - Aguardando conexï¿½es...
+2025-01-17 00:53:16,851 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 57523)
+2025-01-17 00:53:25,571 - Erro com o cliente ('127.0.0.1', 57523): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 00:54:33,716 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 00:54:33,716 - Aguardando conexões...
-2025-01-17 00:54:35,870 - Nova conexão: ('127.0.0.1', 57545)
-2025-01-17 00:54:35,871 - Conexões ativas: 1
-2025-01-17 00:54:35,871 - Aguardando conexões...
-2025-01-17 00:54:41,474 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 57545)
-2025-01-17 00:54:44,924 - Nova conexão: ('127.0.0.1', 57546)
-2025-01-17 00:54:44,925 - Conexões ativas: 2
-2025-01-17 00:54:44,925 - Aguardando conexões...
-2025-01-17 00:54:51,530 - Novo login do usuário Felipe a partir do endereço ('127.0.0.1', 57546)
+2025-01-17 00:54:33,716 - Aguardando conexï¿½es...
+2025-01-17 00:54:35,870 - Nova conexï¿½o: ('127.0.0.1', 57545)
+2025-01-17 00:54:35,871 - Conexï¿½es ativas: 1
+2025-01-17 00:54:35,871 - Aguardando conexï¿½es...
+2025-01-17 00:54:41,474 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 57545)
+2025-01-17 00:54:44,924 - Nova conexï¿½o: ('127.0.0.1', 57546)
+2025-01-17 00:54:44,925 - Conexï¿½es ativas: 2
+2025-01-17 00:54:44,925 - Aguardando conexï¿½es...
+2025-01-17 00:54:51,530 - Novo login do usuï¿½rio Felipe a partir do endereï¿½o ('127.0.0.1', 57546)
 2025-01-17 00:55:12,002 - Erro com o cliente ('127.0.0.1', 57545): a bytes-like object is required, not 'str'
-2025-01-17 00:55:33,413 - Erro com o cliente ('127.0.0.1', 57546): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 01:00:25,632 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-17 00:55:33,413 - Erro com o cliente ('127.0.0.1', 57546): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 01:00:25,632 - Erro no servidor: [WinError 10048] Normalmente ï¿½ permitida apenas uma utilizaï¿½ï¿½o de cada endereï¿½o de soquete (protocolo/endereï¿½o de rede/porta)
 2025-01-17 01:00:25,632 - Servidor encerrado.
 2025-01-17 01:00:30,856 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:00:30,856 - Aguardando conexões...
-2025-01-17 01:00:34,159 - Nova conexão: ('127.0.0.1', 57601)
-2025-01-17 01:00:34,159 - Conexões ativas: 1
-2025-01-17 01:00:34,160 - Aguardando conexões...
-2025-01-17 01:00:51,221 - Novo usuário registrado: Antônio
-2025-01-17 01:00:53,613 - Novo login do usuário Antônio a partir do endereço ('127.0.0.1', 57601)
+2025-01-17 01:00:30,856 - Aguardando conexï¿½es...
+2025-01-17 01:00:34,159 - Nova conexï¿½o: ('127.0.0.1', 57601)
+2025-01-17 01:00:34,159 - Conexï¿½es ativas: 1
+2025-01-17 01:00:34,160 - Aguardando conexï¿½es...
+2025-01-17 01:00:51,221 - Novo usuï¿½rio registrado: Antï¿½nio
+2025-01-17 01:00:53,613 - Novo login do usuï¿½rio Antï¿½nio a partir do endereï¿½o ('127.0.0.1', 57601)
 2025-01-17 01:02:31,819 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:02:31,819 - Aguardando conexões...
-2025-01-17 01:02:34,463 - Nova conexão: ('127.0.0.1', 57627)
-2025-01-17 01:02:34,464 - Conexões ativas: 1
-2025-01-17 01:02:34,464 - Aguardando conexões...
-2025-01-17 01:02:43,820 - Novo login do usuário Antônio a partir do endereço ('127.0.0.1', 57627)
-2025-01-17 01:02:53,630 - Nova conexão: ('127.0.0.1', 57628)
-2025-01-17 01:02:53,630 - Conexões ativas: 2
-2025-01-17 01:02:53,630 - Aguardando conexões...
-2025-01-17 01:03:03,819 - tentativa falha de login a partir do endereço ('127.0.0.1', 57628)
-2025-01-17 01:03:05,340 - Novo usuário registrado: Lucas
-2025-01-17 01:03:07,494 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57628)
+2025-01-17 01:02:31,819 - Aguardando conexï¿½es...
+2025-01-17 01:02:34,463 - Nova conexï¿½o: ('127.0.0.1', 57627)
+2025-01-17 01:02:34,464 - Conexï¿½es ativas: 1
+2025-01-17 01:02:34,464 - Aguardando conexï¿½es...
+2025-01-17 01:02:43,820 - Novo login do usuï¿½rio Antï¿½nio a partir do endereï¿½o ('127.0.0.1', 57627)
+2025-01-17 01:02:53,630 - Nova conexï¿½o: ('127.0.0.1', 57628)
+2025-01-17 01:02:53,630 - Conexï¿½es ativas: 2
+2025-01-17 01:02:53,630 - Aguardando conexï¿½es...
+2025-01-17 01:03:03,819 - tentativa falha de login a partir do endereï¿½o ('127.0.0.1', 57628)
+2025-01-17 01:03:05,340 - Novo usuï¿½rio registrado: Lucas
+2025-01-17 01:03:07,494 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57628)
 2025-01-17 01:04:02,677 - Cliente desconectado: ('127.0.0.1', 57628)
-2025-01-17 01:05:47,008 - Erro com o cliente ('127.0.0.1', 57627): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:05:47,008 - Erro com o cliente ('127.0.0.1', 57627): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:05:54,155 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:05:54,155 - Aguardando conexões...
-2025-01-17 01:05:56,568 - Nova conexão: ('127.0.0.1', 57653)
-2025-01-17 01:05:56,569 - Conexões ativas: 1
-2025-01-17 01:05:56,569 - Aguardando conexões...
-2025-01-17 01:06:08,001 - Novo login do usuário Antônio a partir do endereço ('127.0.0.1', 57653)
-2025-01-17 01:06:18,850 - Nova conexão: ('127.0.0.1', 57657)
-2025-01-17 01:06:18,850 - Conexões ativas: 2
-2025-01-17 01:06:18,850 - Aguardando conexões...
-2025-01-17 01:06:34,809 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57657)
-2025-01-17 01:07:34,730 - Erro com o cliente ('127.0.0.1', 57657): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:05:54,155 - Aguardando conexï¿½es...
+2025-01-17 01:05:56,568 - Nova conexï¿½o: ('127.0.0.1', 57653)
+2025-01-17 01:05:56,569 - Conexï¿½es ativas: 1
+2025-01-17 01:05:56,569 - Aguardando conexï¿½es...
+2025-01-17 01:06:08,001 - Novo login do usuï¿½rio Antï¿½nio a partir do endereï¿½o ('127.0.0.1', 57653)
+2025-01-17 01:06:18,850 - Nova conexï¿½o: ('127.0.0.1', 57657)
+2025-01-17 01:06:18,850 - Conexï¿½es ativas: 2
+2025-01-17 01:06:18,850 - Aguardando conexï¿½es...
+2025-01-17 01:06:34,809 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57657)
+2025-01-17 01:07:34,730 - Erro com o cliente ('127.0.0.1', 57657): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:10:13,017 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:10:13,017 - Aguardando conexões...
-2025-01-17 01:10:15,876 - Nova conexão: ('127.0.0.1', 57690)
-2025-01-17 01:10:15,877 - Conexões ativas: 1
-2025-01-17 01:10:15,877 - Aguardando conexões...
-2025-01-17 01:10:27,318 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57690)
-2025-01-17 01:10:39,127 - Nova conexão: ('127.0.0.1', 57691)
-2025-01-17 01:10:39,128 - Conexões ativas: 2
-2025-01-17 01:10:39,128 - Aguardando conexões...
-2025-01-17 01:10:49,862 - Novo login do usuário Antônio a partir do endereço ('127.0.0.1', 57691)
-2025-01-17 01:11:27,222 - Erro com o cliente ('127.0.0.1', 57690): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 01:11:32,424 - Erro com o cliente ('127.0.0.1', 57691): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:10:13,017 - Aguardando conexï¿½es...
+2025-01-17 01:10:15,876 - Nova conexï¿½o: ('127.0.0.1', 57690)
+2025-01-17 01:10:15,877 - Conexï¿½es ativas: 1
+2025-01-17 01:10:15,877 - Aguardando conexï¿½es...
+2025-01-17 01:10:27,318 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57690)
+2025-01-17 01:10:39,127 - Nova conexï¿½o: ('127.0.0.1', 57691)
+2025-01-17 01:10:39,128 - Conexï¿½es ativas: 2
+2025-01-17 01:10:39,128 - Aguardando conexï¿½es...
+2025-01-17 01:10:49,862 - Novo login do usuï¿½rio Antï¿½nio a partir do endereï¿½o ('127.0.0.1', 57691)
+2025-01-17 01:11:27,222 - Erro com o cliente ('127.0.0.1', 57690): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 01:11:32,424 - Erro com o cliente ('127.0.0.1', 57691): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:13:24,854 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:13:24,854 - Aguardando conexões...
-2025-01-17 01:13:27,704 - Nova conexão: ('127.0.0.1', 57742)
-2025-01-17 01:13:27,705 - Conexões ativas: 1
-2025-01-17 01:13:27,705 - Aguardando conexões...
-2025-01-17 01:13:33,684 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57742)
-2025-01-17 01:13:39,587 - Nova conexão: ('127.0.0.1', 57747)
-2025-01-17 01:13:39,587 - Conexões ativas: 2
-2025-01-17 01:13:39,587 - Aguardando conexões...
-2025-01-17 01:13:54,355 - Novo login do usuário Antônio a partir do endereço ('127.0.0.1', 57747)
-2025-01-17 01:14:41,630 - Erro com o cliente ('127.0.0.1', 57747): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 01:14:42,792 - Erro com o cliente ('127.0.0.1', 57742): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:13:24,854 - Aguardando conexï¿½es...
+2025-01-17 01:13:27,704 - Nova conexï¿½o: ('127.0.0.1', 57742)
+2025-01-17 01:13:27,705 - Conexï¿½es ativas: 1
+2025-01-17 01:13:27,705 - Aguardando conexï¿½es...
+2025-01-17 01:13:33,684 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57742)
+2025-01-17 01:13:39,587 - Nova conexï¿½o: ('127.0.0.1', 57747)
+2025-01-17 01:13:39,587 - Conexï¿½es ativas: 2
+2025-01-17 01:13:39,587 - Aguardando conexï¿½es...
+2025-01-17 01:13:54,355 - Novo login do usuï¿½rio Antï¿½nio a partir do endereï¿½o ('127.0.0.1', 57747)
+2025-01-17 01:14:41,630 - Erro com o cliente ('127.0.0.1', 57747): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 01:14:42,792 - Erro com o cliente ('127.0.0.1', 57742): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:15:42,084 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:15:42,084 - Aguardando conexões...
-2025-01-17 01:15:44,866 - Nova conexão: ('127.0.0.1', 57763)
-2025-01-17 01:15:44,867 - Conexões ativas: 1
-2025-01-17 01:15:44,867 - Aguardando conexões...
-2025-01-17 01:15:49,978 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57763)
-2025-01-17 01:15:56,200 - Erro com o cliente ('127.0.0.1', 57763): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:15:42,084 - Aguardando conexï¿½es...
+2025-01-17 01:15:44,866 - Nova conexï¿½o: ('127.0.0.1', 57763)
+2025-01-17 01:15:44,867 - Conexï¿½es ativas: 1
+2025-01-17 01:15:44,867 - Aguardando conexï¿½es...
+2025-01-17 01:15:49,978 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57763)
+2025-01-17 01:15:56,200 - Erro com o cliente ('127.0.0.1', 57763): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:16:02,620 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:16:02,620 - Aguardando conexões...
-2025-01-17 01:16:06,663 - Nova conexão: ('127.0.0.1', 57768)
-2025-01-17 01:16:06,664 - Conexões ativas: 1
-2025-01-17 01:16:06,664 - Aguardando conexões...
-2025-01-17 01:16:14,897 - tentativa falha de login a partir do endereço ('127.0.0.1', 57768)
-2025-01-17 01:16:21,017 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57768)
-2025-01-17 01:16:28,131 - Nova conexão: ('127.0.0.1', 57769)
-2025-01-17 01:16:28,132 - Conexões ativas: 2
-2025-01-17 01:16:28,132 - Aguardando conexões...
-2025-01-17 01:16:41,121 - Novo login do usuário Antônio a partir do endereço ('127.0.0.1', 57769)
-2025-01-17 01:17:35,889 - Erro com o cliente ('127.0.0.1', 57769): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 01:18:41,777 - Erro com o cliente ('127.0.0.1', 57768): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:16:02,620 - Aguardando conexï¿½es...
+2025-01-17 01:16:06,663 - Nova conexï¿½o: ('127.0.0.1', 57768)
+2025-01-17 01:16:06,664 - Conexï¿½es ativas: 1
+2025-01-17 01:16:06,664 - Aguardando conexï¿½es...
+2025-01-17 01:16:14,897 - tentativa falha de login a partir do endereï¿½o ('127.0.0.1', 57768)
+2025-01-17 01:16:21,017 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57768)
+2025-01-17 01:16:28,131 - Nova conexï¿½o: ('127.0.0.1', 57769)
+2025-01-17 01:16:28,132 - Conexï¿½es ativas: 2
+2025-01-17 01:16:28,132 - Aguardando conexï¿½es...
+2025-01-17 01:16:41,121 - Novo login do usuï¿½rio Antï¿½nio a partir do endereï¿½o ('127.0.0.1', 57769)
+2025-01-17 01:17:35,889 - Erro com o cliente ('127.0.0.1', 57769): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 01:18:41,777 - Erro com o cliente ('127.0.0.1', 57768): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:22:25,526 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:22:25,526 - Aguardando conexões...
-2025-01-17 01:22:27,940 - Nova conexão: ('127.0.0.1', 57839)
-2025-01-17 01:22:27,941 - Conexões ativas: 1
-2025-01-17 01:22:27,941 - Aguardando conexões...
-2025-01-17 01:22:33,469 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57839)
-2025-01-17 01:22:40,512 - Nova conexão: ('127.0.0.1', 57840)
-2025-01-17 01:22:40,513 - Conexões ativas: 2
-2025-01-17 01:22:40,513 - Aguardando conexões...
-2025-01-17 01:22:50,612 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 57840)
-2025-01-17 01:23:10,055 - Erro com o cliente ('127.0.0.1', 57839): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 01:23:11,960 - Erro com o cliente ('127.0.0.1', 57840): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:22:25,526 - Aguardando conexï¿½es...
+2025-01-17 01:22:27,940 - Nova conexï¿½o: ('127.0.0.1', 57839)
+2025-01-17 01:22:27,941 - Conexï¿½es ativas: 1
+2025-01-17 01:22:27,941 - Aguardando conexï¿½es...
+2025-01-17 01:22:33,469 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57839)
+2025-01-17 01:22:40,512 - Nova conexï¿½o: ('127.0.0.1', 57840)
+2025-01-17 01:22:40,513 - Conexï¿½es ativas: 2
+2025-01-17 01:22:40,513 - Aguardando conexï¿½es...
+2025-01-17 01:22:50,612 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 57840)
+2025-01-17 01:23:10,055 - Erro com o cliente ('127.0.0.1', 57839): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 01:23:11,960 - Erro com o cliente ('127.0.0.1', 57840): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:28:23,918 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:28:23,918 - Aguardando conexões...
-2025-01-17 01:28:26,381 - Nova conexão: ('127.0.0.1', 57939)
-2025-01-17 01:28:26,382 - Conexões ativas: 1
-2025-01-17 01:28:26,382 - Aguardando conexões...
-2025-01-17 01:28:32,104 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57939)
-2025-01-17 01:28:37,457 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-17 01:28:23,918 - Aguardando conexï¿½es...
+2025-01-17 01:28:26,381 - Nova conexï¿½o: ('127.0.0.1', 57939)
+2025-01-17 01:28:26,382 - Conexï¿½es ativas: 1
+2025-01-17 01:28:26,382 - Aguardando conexï¿½es...
+2025-01-17 01:28:32,104 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57939)
+2025-01-17 01:28:37,457 - Erro no servidor: [WinError 10048] Normalmente ï¿½ permitida apenas uma utilizaï¿½ï¿½o de cada endereï¿½o de soquete (protocolo/endereï¿½o de rede/porta)
 2025-01-17 01:28:37,458 - Servidor encerrado.
-2025-01-17 01:28:45,992 - Nova conexão: ('127.0.0.1', 57946)
-2025-01-17 01:28:45,993 - Conexões ativas: 2
-2025-01-17 01:28:45,993 - Aguardando conexões...
-2025-01-17 01:28:55,360 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 57946)
-2025-01-17 01:29:22,612 - Erro com o cliente ('127.0.0.1', 57946): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:28:45,992 - Nova conexï¿½o: ('127.0.0.1', 57946)
+2025-01-17 01:28:45,993 - Conexï¿½es ativas: 2
+2025-01-17 01:28:45,993 - Aguardando conexï¿½es...
+2025-01-17 01:28:55,360 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 57946)
+2025-01-17 01:29:22,612 - Erro com o cliente ('127.0.0.1', 57946): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:33:25,007 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:33:25,007 - Aguardando conexões...
-2025-01-17 01:33:26,815 - Nova conexão: ('127.0.0.1', 57983)
-2025-01-17 01:33:26,816 - Conexões ativas: 1
-2025-01-17 01:33:26,816 - Aguardando conexões...
-2025-01-17 01:33:31,412 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57983)
-2025-01-17 01:33:36,831 - Nova conexão: ('127.0.0.1', 57989)
-2025-01-17 01:33:36,831 - Conexões ativas: 2
-2025-01-17 01:33:36,831 - Aguardando conexões...
-2025-01-17 01:33:43,604 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 57989)
-2025-01-17 01:35:37,094 - Erro com o cliente ('127.0.0.1', 57983): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 01:35:38,008 - Erro com o cliente ('127.0.0.1', 57989): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:33:25,007 - Aguardando conexï¿½es...
+2025-01-17 01:33:26,815 - Nova conexï¿½o: ('127.0.0.1', 57983)
+2025-01-17 01:33:26,816 - Conexï¿½es ativas: 1
+2025-01-17 01:33:26,816 - Aguardando conexï¿½es...
+2025-01-17 01:33:31,412 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57983)
+2025-01-17 01:33:36,831 - Nova conexï¿½o: ('127.0.0.1', 57989)
+2025-01-17 01:33:36,831 - Conexï¿½es ativas: 2
+2025-01-17 01:33:36,831 - Aguardando conexï¿½es...
+2025-01-17 01:33:43,604 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 57989)
+2025-01-17 01:35:37,094 - Erro com o cliente ('127.0.0.1', 57983): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 01:35:38,008 - Erro com o cliente ('127.0.0.1', 57989): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:36:34,720 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:36:34,720 - Aguardando conexões...
-2025-01-17 01:36:39,450 - Nova conexão: ('127.0.0.1', 57998)
-2025-01-17 01:36:39,451 - Conexões ativas: 1
-2025-01-17 01:36:39,451 - Aguardando conexões...
-2025-01-17 01:36:54,562 - Novo login do usuário Antônio a partir do endereço ('127.0.0.1', 57998)
-2025-01-17 01:37:02,409 - Nova conexão: ('127.0.0.1', 57999)
-2025-01-17 01:37:02,410 - Conexões ativas: 2
-2025-01-17 01:37:02,410 - Aguardando conexões...
-2025-01-17 01:37:07,801 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 57999)
-2025-01-17 01:42:30,415 - Erro com o cliente ('127.0.0.1', 57999): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 01:42:33,100 - Erro com o cliente ('127.0.0.1', 57998): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:36:34,720 - Aguardando conexï¿½es...
+2025-01-17 01:36:39,450 - Nova conexï¿½o: ('127.0.0.1', 57998)
+2025-01-17 01:36:39,451 - Conexï¿½es ativas: 1
+2025-01-17 01:36:39,451 - Aguardando conexï¿½es...
+2025-01-17 01:36:54,562 - Novo login do usuï¿½rio Antï¿½nio a partir do endereï¿½o ('127.0.0.1', 57998)
+2025-01-17 01:37:02,409 - Nova conexï¿½o: ('127.0.0.1', 57999)
+2025-01-17 01:37:02,410 - Conexï¿½es ativas: 2
+2025-01-17 01:37:02,410 - Aguardando conexï¿½es...
+2025-01-17 01:37:07,801 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 57999)
+2025-01-17 01:42:30,415 - Erro com o cliente ('127.0.0.1', 57999): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 01:42:33,100 - Erro com o cliente ('127.0.0.1', 57998): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:44:59,865 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:44:59,866 - Aguardando conexões...
-2025-01-17 01:45:02,159 - Nova conexão: ('127.0.0.1', 58063)
-2025-01-17 01:45:02,160 - Conexões ativas: 1
-2025-01-17 01:45:02,161 - Aguardando conexões...
-2025-01-17 01:45:09,923 - Novo login do usuário Antônio a partir do endereço ('127.0.0.1', 58063)
-2025-01-17 01:45:14,984 - Nova conexão: ('127.0.0.1', 58064)
-2025-01-17 01:45:14,984 - Conexões ativas: 2
-2025-01-17 01:45:14,985 - Aguardando conexões...
-2025-01-17 01:45:20,843 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58064)
-2025-01-17 01:47:14,027 - Erro com o cliente ('127.0.0.1', 58063): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 01:47:14,930 - Erro com o cliente ('127.0.0.1', 58064): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:44:59,866 - Aguardando conexï¿½es...
+2025-01-17 01:45:02,159 - Nova conexï¿½o: ('127.0.0.1', 58063)
+2025-01-17 01:45:02,160 - Conexï¿½es ativas: 1
+2025-01-17 01:45:02,161 - Aguardando conexï¿½es...
+2025-01-17 01:45:09,923 - Novo login do usuï¿½rio Antï¿½nio a partir do endereï¿½o ('127.0.0.1', 58063)
+2025-01-17 01:45:14,984 - Nova conexï¿½o: ('127.0.0.1', 58064)
+2025-01-17 01:45:14,984 - Conexï¿½es ativas: 2
+2025-01-17 01:45:14,985 - Aguardando conexï¿½es...
+2025-01-17 01:45:20,843 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58064)
+2025-01-17 01:47:14,027 - Erro com o cliente ('127.0.0.1', 58063): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 01:47:14,930 - Erro com o cliente ('127.0.0.1', 58064): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:48:58,352 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:48:58,352 - Aguardando conexões...
-2025-01-17 01:49:00,865 - Nova conexão: ('127.0.0.1', 58118)
-2025-01-17 01:49:00,866 - Conexões ativas: 1
-2025-01-17 01:49:00,867 - Aguardando conexões...
-2025-01-17 01:49:07,832 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58118)
-2025-01-17 01:49:17,278 - Nova conexão: ('127.0.0.1', 58119)
-2025-01-17 01:49:17,278 - Conexões ativas: 2
-2025-01-17 01:49:17,278 - Aguardando conexões...
-2025-01-17 01:49:22,544 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 58119)
-2025-01-17 01:54:32,379 - Erro com o cliente ('127.0.0.1', 58119): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 01:54:33,975 - Erro com o cliente ('127.0.0.1', 58118): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:48:58,352 - Aguardando conexï¿½es...
+2025-01-17 01:49:00,865 - Nova conexï¿½o: ('127.0.0.1', 58118)
+2025-01-17 01:49:00,866 - Conexï¿½es ativas: 1
+2025-01-17 01:49:00,867 - Aguardando conexï¿½es...
+2025-01-17 01:49:07,832 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58118)
+2025-01-17 01:49:17,278 - Nova conexï¿½o: ('127.0.0.1', 58119)
+2025-01-17 01:49:17,278 - Conexï¿½es ativas: 2
+2025-01-17 01:49:17,278 - Aguardando conexï¿½es...
+2025-01-17 01:49:22,544 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 58119)
+2025-01-17 01:54:32,379 - Erro com o cliente ('127.0.0.1', 58119): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 01:54:33,975 - Erro com o cliente ('127.0.0.1', 58118): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 01:59:02,711 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 01:59:02,712 - Aguardando conexões...
-2025-01-17 01:59:04,604 - Nova conexão: ('127.0.0.1', 58187)
-2025-01-17 01:59:04,605 - Conexões ativas: 1
-2025-01-17 01:59:04,605 - Aguardando conexões...
-2025-01-17 01:59:12,113 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 58187)
-2025-01-17 01:59:19,330 - Nova conexão: ('127.0.0.1', 58188)
-2025-01-17 01:59:19,330 - Conexões ativas: 2
-2025-01-17 01:59:19,330 - Aguardando conexões...
-2025-01-17 01:59:24,049 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58188)
-2025-01-17 02:11:54,902 - Erro com o cliente ('127.0.0.1', 58187): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 01:59:02,712 - Aguardando conexï¿½es...
+2025-01-17 01:59:04,604 - Nova conexï¿½o: ('127.0.0.1', 58187)
+2025-01-17 01:59:04,605 - Conexï¿½es ativas: 1
+2025-01-17 01:59:04,605 - Aguardando conexï¿½es...
+2025-01-17 01:59:12,113 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 58187)
+2025-01-17 01:59:19,330 - Nova conexï¿½o: ('127.0.0.1', 58188)
+2025-01-17 01:59:19,330 - Conexï¿½es ativas: 2
+2025-01-17 01:59:19,330 - Aguardando conexï¿½es...
+2025-01-17 01:59:24,049 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58188)
+2025-01-17 02:11:54,902 - Erro com o cliente ('127.0.0.1', 58187): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 02:12:01,527 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 02:12:01,527 - Aguardando conexões...
-2025-01-17 02:12:03,444 - Nova conexão: ('127.0.0.1', 58290)
-2025-01-17 02:12:03,445 - Conexões ativas: 1
-2025-01-17 02:12:03,445 - Aguardando conexões...
-2025-01-17 02:12:08,863 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58290)
-2025-01-17 02:12:17,165 - Nova conexão: ('127.0.0.1', 58292)
-2025-01-17 02:12:17,165 - Conexões ativas: 2
-2025-01-17 02:12:17,165 - Aguardando conexões...
-2025-01-17 02:12:23,727 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 58292)
-2025-01-17 02:13:40,722 - Erro com o cliente ('127.0.0.1', 58292): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 02:13:41,289 - Erro com o cliente ('127.0.0.1', 58290): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 02:12:01,527 - Aguardando conexï¿½es...
+2025-01-17 02:12:03,444 - Nova conexï¿½o: ('127.0.0.1', 58290)
+2025-01-17 02:12:03,445 - Conexï¿½es ativas: 1
+2025-01-17 02:12:03,445 - Aguardando conexï¿½es...
+2025-01-17 02:12:08,863 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58290)
+2025-01-17 02:12:17,165 - Nova conexï¿½o: ('127.0.0.1', 58292)
+2025-01-17 02:12:17,165 - Conexï¿½es ativas: 2
+2025-01-17 02:12:17,165 - Aguardando conexï¿½es...
+2025-01-17 02:12:23,727 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 58292)
+2025-01-17 02:13:40,722 - Erro com o cliente ('127.0.0.1', 58292): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 02:13:41,289 - Erro com o cliente ('127.0.0.1', 58290): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 02:13:46,296 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 02:13:46,297 - Aguardando conexões...
-2025-01-17 02:13:48,090 - Nova conexão: ('127.0.0.1', 58305)
-2025-01-17 02:13:48,091 - Conexões ativas: 1
-2025-01-17 02:13:48,091 - Aguardando conexões...
-2025-01-17 02:13:56,246 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58305)
-2025-01-17 02:14:03,257 - Nova conexão: ('127.0.0.1', 58323)
-2025-01-17 02:14:03,257 - Conexões ativas: 2
-2025-01-17 02:14:03,257 - Aguardando conexões...
-2025-01-17 02:14:08,821 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 58323)
-2025-01-17 02:16:10,482 - Erro com o cliente ('127.0.0.1', 58305): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 02:13:46,297 - Aguardando conexï¿½es...
+2025-01-17 02:13:48,090 - Nova conexï¿½o: ('127.0.0.1', 58305)
+2025-01-17 02:13:48,091 - Conexï¿½es ativas: 1
+2025-01-17 02:13:48,091 - Aguardando conexï¿½es...
+2025-01-17 02:13:56,246 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58305)
+2025-01-17 02:14:03,257 - Nova conexï¿½o: ('127.0.0.1', 58323)
+2025-01-17 02:14:03,257 - Conexï¿½es ativas: 2
+2025-01-17 02:14:03,257 - Aguardando conexï¿½es...
+2025-01-17 02:14:08,821 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 58323)
+2025-01-17 02:16:10,482 - Erro com o cliente ('127.0.0.1', 58305): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 02:19:13,841 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 02:19:13,841 - Aguardando conexões...
-2025-01-17 02:19:16,263 - Nova conexão: ('127.0.0.1', 58372)
-2025-01-17 02:19:16,265 - Conexões ativas: 1
-2025-01-17 02:19:16,265 - Aguardando conexões...
-2025-01-17 02:19:22,314 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58372)
-2025-01-17 02:19:46,938 - Destinatário offline: Pedro
-2025-01-17 02:19:56,946 - Destinatário offline: Pedro
-2025-01-17 02:20:13,989 - Erro com o cliente ('127.0.0.1', 58372): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 02:21:21,734 - Nova conexão: ('127.0.0.1', 58378)
-2025-01-17 02:21:21,735 - Conexões ativas: 1
-2025-01-17 02:21:21,735 - Aguardando conexões...
-2025-01-17 02:21:29,680 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 58378)
-2025-01-17 02:21:38,814 - Erro com o cliente ('127.0.0.1', 58378): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 02:21:41,473 - Nova conexão: ('127.0.0.1', 58383)
-2025-01-17 02:21:41,473 - Conexões ativas: 1
-2025-01-17 02:21:41,473 - Aguardando conexões...
-2025-01-17 02:21:49,959 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 58383)
+2025-01-17 02:19:13,841 - Aguardando conexï¿½es...
+2025-01-17 02:19:16,263 - Nova conexï¿½o: ('127.0.0.1', 58372)
+2025-01-17 02:19:16,265 - Conexï¿½es ativas: 1
+2025-01-17 02:19:16,265 - Aguardando conexï¿½es...
+2025-01-17 02:19:22,314 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58372)
+2025-01-17 02:19:46,938 - Destinatï¿½rio offline: Pedro
+2025-01-17 02:19:56,946 - Destinatï¿½rio offline: Pedro
+2025-01-17 02:20:13,989 - Erro com o cliente ('127.0.0.1', 58372): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 02:21:21,734 - Nova conexï¿½o: ('127.0.0.1', 58378)
+2025-01-17 02:21:21,735 - Conexï¿½es ativas: 1
+2025-01-17 02:21:21,735 - Aguardando conexï¿½es...
+2025-01-17 02:21:29,680 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 58378)
+2025-01-17 02:21:38,814 - Erro com o cliente ('127.0.0.1', 58378): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 02:21:41,473 - Nova conexï¿½o: ('127.0.0.1', 58383)
+2025-01-17 02:21:41,473 - Conexï¿½es ativas: 1
+2025-01-17 02:21:41,473 - Aguardando conexï¿½es...
+2025-01-17 02:21:49,959 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 58383)
 2025-01-17 02:36:31,394 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 02:36:31,394 - Aguardando conexões...
-2025-01-17 02:36:33,515 - Nova conexão: ('127.0.0.1', 58527)
-2025-01-17 02:36:33,516 - Conexões ativas: 1
-2025-01-17 02:36:33,516 - Aguardando conexões...
-2025-01-17 02:36:39,381 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58527)
-2025-01-17 02:36:46,730 - Nova conexão: ('127.0.0.1', 58529)
-2025-01-17 02:36:46,731 - Conexões ativas: 2
-2025-01-17 02:36:46,731 - Aguardando conexões...
-2025-01-17 02:36:52,308 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 58529)
+2025-01-17 02:36:31,394 - Aguardando conexï¿½es...
+2025-01-17 02:36:33,515 - Nova conexï¿½o: ('127.0.0.1', 58527)
+2025-01-17 02:36:33,516 - Conexï¿½es ativas: 1
+2025-01-17 02:36:33,516 - Aguardando conexï¿½es...
+2025-01-17 02:36:39,381 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58527)
+2025-01-17 02:36:46,730 - Nova conexï¿½o: ('127.0.0.1', 58529)
+2025-01-17 02:36:46,731 - Conexï¿½es ativas: 2
+2025-01-17 02:36:46,731 - Aguardando conexï¿½es...
+2025-01-17 02:36:52,308 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 58529)
 2025-01-17 02:37:20,988 - Erro com o cliente ('127.0.0.1', 58527): saveMessages() takes 1 positional argument but 3 were given
 2025-01-17 02:37:42,492 - Erro com o cliente ('127.0.0.1', 58529): saveMessages() takes 1 positional argument but 3 were given
 2025-01-17 02:38:11,294 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 02:38:11,295 - Aguardando conexões...
-2025-01-17 02:38:13,871 - Nova conexão: ('127.0.0.1', 58535)
-2025-01-17 02:38:13,872 - Conexões ativas: 1
-2025-01-17 02:38:13,872 - Aguardando conexões...
-2025-01-17 02:38:18,692 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58535)
-2025-01-17 02:38:25,076 - Nova conexão: ('127.0.0.1', 58536)
-2025-01-17 02:38:25,077 - Conexões ativas: 2
-2025-01-17 02:38:25,077 - Aguardando conexões...
-2025-01-17 02:38:29,867 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 58536)
-2025-01-17 02:38:53,035 - Erro com o cliente ('127.0.0.1', 58536): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 02:39:30,172 - Erro com o cliente ('127.0.0.1', 58535): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 02:39:36,009 - Nova conexão: ('127.0.0.1', 58560)
-2025-01-17 02:39:36,010 - Conexões ativas: 1
-2025-01-17 02:39:36,010 - Aguardando conexões...
-2025-01-17 02:39:40,938 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58560)
-2025-01-17 02:39:51,988 - Erro com o cliente ('127.0.0.1', 58560): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 02:38:11,295 - Aguardando conexï¿½es...
+2025-01-17 02:38:13,871 - Nova conexï¿½o: ('127.0.0.1', 58535)
+2025-01-17 02:38:13,872 - Conexï¿½es ativas: 1
+2025-01-17 02:38:13,872 - Aguardando conexï¿½es...
+2025-01-17 02:38:18,692 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58535)
+2025-01-17 02:38:25,076 - Nova conexï¿½o: ('127.0.0.1', 58536)
+2025-01-17 02:38:25,077 - Conexï¿½es ativas: 2
+2025-01-17 02:38:25,077 - Aguardando conexï¿½es...
+2025-01-17 02:38:29,867 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 58536)
+2025-01-17 02:38:53,035 - Erro com o cliente ('127.0.0.1', 58536): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 02:39:30,172 - Erro com o cliente ('127.0.0.1', 58535): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 02:39:36,009 - Nova conexï¿½o: ('127.0.0.1', 58560)
+2025-01-17 02:39:36,010 - Conexï¿½es ativas: 1
+2025-01-17 02:39:36,010 - Aguardando conexï¿½es...
+2025-01-17 02:39:40,938 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58560)
+2025-01-17 02:39:51,988 - Erro com o cliente ('127.0.0.1', 58560): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
 2025-01-17 02:40:35,757 - Servidor iniciado em 127.0.0.1:5000
-2025-01-17 02:40:35,758 - Aguardando conexões...
-2025-01-17 02:40:38,330 - Nova conexão: ('127.0.0.1', 58570)
-2025-01-17 02:40:38,331 - Conexões ativas: 1
-2025-01-17 02:40:38,332 - Aguardando conexões...
-2025-01-17 02:40:44,873 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58570)
-2025-01-17 02:40:50,925 - Nova conexão: ('127.0.0.1', 58571)
-2025-01-17 02:40:50,926 - Conexões ativas: 2
-2025-01-17 02:40:50,926 - Aguardando conexões...
-2025-01-17 02:40:57,849 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 58571)
-2025-01-17 02:41:39,226 - Erro com o cliente ('127.0.0.1', 58571): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 02:41:40,065 - Erro com o cliente ('127.0.0.1', 58570): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 02:41:41,734 - Nova conexão: ('127.0.0.1', 58572)
-2025-01-17 02:41:41,735 - Conexões ativas: 1
-2025-01-17 02:41:41,735 - Aguardando conexões...
-2025-01-17 02:41:58,432 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58572)
-2025-01-17 02:42:01,321 - Erro com o cliente ('127.0.0.1', 58572): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
-2025-01-17 02:42:04,927 - Nova conexão: ('127.0.0.1', 58574)
-2025-01-17 02:42:04,928 - Conexões ativas: 1
-2025-01-17 02:42:04,928 - Aguardando conexões...
-2025-01-17 02:42:12,488 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58574)
-2025-01-17 02:42:14,596 - Erro com o cliente ('127.0.0.1', 58574): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 02:40:35,758 - Aguardando conexï¿½es...
+2025-01-17 02:40:38,330 - Nova conexï¿½o: ('127.0.0.1', 58570)
+2025-01-17 02:40:38,331 - Conexï¿½es ativas: 1
+2025-01-17 02:40:38,332 - Aguardando conexï¿½es...
+2025-01-17 02:40:44,873 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58570)
+2025-01-17 02:40:50,925 - Nova conexï¿½o: ('127.0.0.1', 58571)
+2025-01-17 02:40:50,926 - Conexï¿½es ativas: 2
+2025-01-17 02:40:50,926 - Aguardando conexï¿½es...
+2025-01-17 02:40:57,849 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 58571)
+2025-01-17 02:41:39,226 - Erro com o cliente ('127.0.0.1', 58571): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 02:41:40,065 - Erro com o cliente ('127.0.0.1', 58570): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 02:41:41,734 - Nova conexï¿½o: ('127.0.0.1', 58572)
+2025-01-17 02:41:41,735 - Conexï¿½es ativas: 1
+2025-01-17 02:41:41,735 - Aguardando conexï¿½es...
+2025-01-17 02:41:58,432 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58572)
+2025-01-17 02:42:01,321 - Erro com o cliente ('127.0.0.1', 58572): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 02:42:04,927 - Nova conexï¿½o: ('127.0.0.1', 58574)
+2025-01-17 02:42:04,928 - Conexï¿½es ativas: 1
+2025-01-17 02:42:04,928 - Aguardando conexï¿½es...
+2025-01-17 02:42:12,488 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 58574)
+2025-01-17 02:42:14,596 - Erro com o cliente ('127.0.0.1', 58574): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 08:19:29,918 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 08:19:29,918 - Aguardando conexï¿½es...
+2025-01-17 08:19:34,827 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 08:19:34,827 - Aguardando conexï¿½es...
+2025-01-17 08:19:38,460 - Nova conexï¿½o: ('127.0.0.1', 34133)
+2025-01-17 08:19:38,461 - Conexï¿½es ativas: 1
+2025-01-17 08:19:38,461 - Aguardando conexï¿½es...
+2025-01-17 08:19:47,277 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 34133)
+2025-01-17 08:19:57,371 - Erro com o cliente ('127.0.0.1', 34133): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 08:45:46,123 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 08:45:46,140 - Aguardando conexï¿½es...
+2025-01-17 08:45:46,874 - Nova conexï¿½o: ('127.0.0.1', 27748)
+2025-01-17 08:45:46,891 - Conexï¿½es ativas: 1
+2025-01-17 08:45:46,891 - Aguardando conexï¿½es...
+2025-01-17 08:45:52,643 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 27748)
+2025-01-17 08:45:54,142 - Cliente desconectado: ('127.0.0.1', 27748)
+2025-01-17 08:46:24,543 - Nova conexï¿½o: ('127.0.0.1', 27750)
+2025-01-17 08:46:24,543 - Conexï¿½es ativas: 1
+2025-01-17 08:46:24,543 - Aguardando conexï¿½es...
+2025-01-17 08:46:34,800 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 27750)
+2025-01-17 08:46:35,919 - Cliente desconectado: ('127.0.0.1', 27750)
+2025-01-17 08:47:09,892 - Erro no servidor: [WinError 10048] Normalmente ï¿½ permitida apenas uma utilizaï¿½ï¿½o de cada endereï¿½o de soquete (protocolo/endereï¿½o de rede/porta)
+2025-01-17 08:47:09,892 - Servidor encerrado.
+2025-01-17 08:47:13,124 - Nova conexï¿½o: ('127.0.0.1', 27760)
+2025-01-17 08:47:13,124 - Conexï¿½es ativas: 1
+2025-01-17 08:47:13,125 - Aguardando conexï¿½es...
+2025-01-17 08:47:22,856 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 27760)
+2025-01-17 08:48:00,132 - Erro com o cliente ('127.0.0.1', 27760): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 08:48:45,635 - Nova conexï¿½o: ('127.0.0.1', 27770)
+2025-01-17 08:48:45,636 - Conexï¿½es ativas: 1
+2025-01-17 08:48:45,636 - Aguardando conexï¿½es...
+2025-01-17 08:48:50,130 - Cliente desconectado: ('127.0.0.1', 27770)
+2025-01-17 08:48:51,945 - Erro no servidor: [WinError 10048] Normalmente ï¿½ permitida apenas uma utilizaï¿½ï¿½o de cada endereï¿½o de soquete (protocolo/endereï¿½o de rede/porta)
+2025-01-17 08:48:51,945 - Servidor encerrado.
+2025-01-17 08:48:54,878 - Nova conexï¿½o: ('127.0.0.1', 27771)
+2025-01-17 08:48:54,878 - Conexï¿½es ativas: 1
+2025-01-17 08:48:54,878 - Aguardando conexï¿½es...
+2025-01-17 08:49:02,064 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 27771)
+2025-01-17 08:49:23,164 - Erro com o cliente ('127.0.0.1', 27771): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 08:54:24,947 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 08:54:24,947 - Aguardando conexï¿½es...
+2025-01-17 08:54:25,834 - Nova conexï¿½o: ('127.0.0.1', 22757)
+2025-01-17 08:54:25,835 - Conexï¿½es ativas: 1
+2025-01-17 08:54:25,835 - Aguardando conexï¿½es...
+2025-01-17 08:54:34,704 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 22757)
+2025-01-17 08:56:37,560 - Erro no servidor: [WinError 10048] Normalmente ï¿½ permitida apenas uma utilizaï¿½ï¿½o de cada endereï¿½o de soquete (protocolo/endereï¿½o de rede/porta)
+2025-01-17 08:56:37,560 - Servidor encerrado.
+2025-01-17 08:56:38,685 - Nova conexï¿½o: ('127.0.0.1', 22771)
+2025-01-17 08:56:38,685 - Conexï¿½es ativas: 2
+2025-01-17 08:56:38,685 - Aguardando conexï¿½es...
+2025-01-17 08:56:46,336 - Novo login do usuï¿½rio Pedro a partir do endereï¿½o ('127.0.0.1', 22771)
+2025-01-17 09:22:29,476 - Erro com o cliente ('127.0.0.1', 22771): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 09:22:30,179 - Erro com o cliente ('127.0.0.1', 22757): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 09:24:32,988 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 09:24:32,989 - Aguardando conexï¿½es...
+2025-01-17 09:24:34,107 - Nova conexï¿½o: ('127.0.0.1', 22953)
+2025-01-17 09:24:34,108 - Conexï¿½es ativas: 1
+2025-01-17 09:24:34,108 - Aguardando conexï¿½es...
+2025-01-17 09:24:43,948 - Novo login do usuï¿½rio Lucas a partir do endereï¿½o ('127.0.0.1', 22953)
+2025-01-17 09:25:47,476 - Erro com o cliente ('127.0.0.1', 22953): [WinError 10054] Foi forï¿½ado o cancelamento de uma conexï¿½o existente pelo host remoto
+2025-01-17 09:31:49,556 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 09:31:49,557 - Aguardando conexões...
+2025-01-17 09:31:49,886 - Nova conexão: ('127.0.0.1', 23072)
+2025-01-17 09:31:49,887 - Conexões ativas: 1
+2025-01-17 09:31:49,887 - Aguardando conexões...
+2025-01-17 09:32:00,844 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 23072)
+2025-01-17 09:32:08,971 - Erro com o cliente ('127.0.0.1', 23072): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 09:32:43,121 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 09:32:43,121 - Aguardando conexões...
+2025-01-17 09:32:44,747 - Nova conexão: ('127.0.0.1', 23082)
+2025-01-17 09:32:44,748 - Conexões ativas: 1
+2025-01-17 09:32:44,748 - Aguardando conexões...
+2025-01-17 09:32:51,844 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 23082)
+2025-01-17 09:33:03,687 - Nova conexão: ('127.0.0.1', 23084)
+2025-01-17 09:33:03,687 - Conexões ativas: 2
+2025-01-17 09:33:03,687 - Aguardando conexões...
+2025-01-17 09:33:12,562 - Novo login do usuário Antônio a partir do endereço ('127.0.0.1', 23084)
+2025-01-17 09:33:42,546 - Erro com o cliente ('127.0.0.1', 23082): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 09:33:44,039 - Erro com o cliente ('127.0.0.1', 23084): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 09:34:55,388 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 09:34:55,388 - Aguardando conexões...
+2025-01-17 09:34:56,756 - Nova conexão: ('127.0.0.1', 23109)
+2025-01-17 09:34:56,757 - Conexões ativas: 1
+2025-01-17 09:34:56,758 - Aguardando conexões...
+2025-01-17 09:35:03,380 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 23109)
+2025-01-17 09:35:09,689 - Erro com o cliente ('127.0.0.1', 23109): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 09:35:22,347 - Nova conexão: ('127.0.0.1', 23113)
+2025-01-17 09:35:22,347 - Conexões ativas: 1
+2025-01-17 09:35:22,347 - Aguardando conexões...
+2025-01-17 09:35:28,484 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 23113)
+2025-01-17 09:35:37,232 - Erro com o cliente ('127.0.0.1', 23113): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 09:37:31,001 - Nova conexão: ('127.0.0.1', 23137)
+2025-01-17 09:37:31,001 - Conexões ativas: 1
+2025-01-17 09:37:31,002 - Aguardando conexões...
+2025-01-17 09:37:38,005 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 23137)
+2025-01-17 09:37:48,971 - Erro com o cliente ('127.0.0.1', 23137): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 09:40:00,160 - Nova conexão: ('127.0.0.1', 23153)
+2025-01-17 09:40:00,160 - Conexões ativas: 1
+2025-01-17 09:40:00,160 - Aguardando conexões...
+2025-01-17 09:40:05,621 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 23153)
+2025-01-17 09:40:18,913 - Erro com o cliente ('127.0.0.1', 23153): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 09:44:01,179 - Nova conexão: ('127.0.0.1', 23206)
+2025-01-17 09:44:01,180 - Conexões ativas: 1
+2025-01-17 09:44:01,180 - Aguardando conexões...
+2025-01-17 09:44:07,677 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 23206)
+2025-01-17 09:44:33,964 - Erro com o cliente ('127.0.0.1', 23206): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 09:52:05,079 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 09:52:05,092 - Aguardando conexões...
+2025-01-17 09:52:05,101 - Nova conexão: ('127.0.0.1', 35843)
+2025-01-17 09:52:05,110 - Conexões ativas: 1
+2025-01-17 09:52:05,110 - Aguardando conexões...
+2025-01-17 09:52:13,646 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 35843)
+2025-01-17 09:52:49,722 - Erro com o cliente ('127.0.0.1', 35843): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 10:06:33,593 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-17 10:06:33,593 - Servidor encerrado.
+2025-01-17 10:06:36,666 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 10:06:36,667 - Aguardando conexões...
+2025-01-17 10:06:38,589 - Nova conexão: ('127.0.0.1', 36040)
+2025-01-17 10:06:38,590 - Conexões ativas: 1
+2025-01-17 10:06:38,590 - Aguardando conexões...
+2025-01-17 10:06:47,495 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 36040)
+2025-01-17 10:06:49,823 - Erro com o cliente ('127.0.0.1', 36040): 'dict' object has no attribute 'encode'
+2025-01-17 10:07:54,379 - Nova conexão: ('127.0.0.1', 36055)
+2025-01-17 10:07:54,381 - Conexões ativas: 1
+2025-01-17 10:07:54,381 - Aguardando conexões...
+2025-01-17 10:08:06,221 - Cliente desconectado: ('127.0.0.1', 36055)
+2025-01-17 10:09:48,891 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 10:09:48,892 - Aguardando conexões...
+2025-01-17 10:09:50,502 - Nova conexão: ('127.0.0.1', 36070)
+2025-01-17 10:09:50,503 - Conexões ativas: 1
+2025-01-17 10:09:50,503 - Aguardando conexões...
+2025-01-17 10:09:55,918 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 36070)
+2025-01-17 10:09:59,023 - Erro com o cliente ('127.0.0.1', 36070): 'dict' object has no attribute 'encode'
+2025-01-17 10:13:40,567 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 10:13:40,567 - Aguardando conexões...
+2025-01-17 10:13:42,004 - Nova conexão: ('127.0.0.1', 36117)
+2025-01-17 10:13:42,005 - Conexões ativas: 1
+2025-01-17 10:13:42,005 - Aguardando conexões...
+2025-01-17 10:13:49,239 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 36117)
+2025-01-17 10:14:19,363 - Destinatário offline: Pedro
+2025-01-17 10:14:22,981 - Erro com o cliente ('127.0.0.1', 36117): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 10:25:57,176 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 10:25:57,177 - Aguardando conexões...
+2025-01-17 10:25:58,409 - Nova conexão: ('127.0.0.1', 36377)
+2025-01-17 10:25:58,410 - Conexões ativas: 1
+2025-01-17 10:25:58,410 - Aguardando conexões...
+2025-01-17 10:26:03,581 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 36377)
+2025-01-17 10:26:25,911 - Erro com o cliente ('127.0.0.1', 36377): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 10:29:28,713 - Nova conexão: ('127.0.0.1', 36412)
+2025-01-17 10:29:28,714 - Conexões ativas: 1
+2025-01-17 10:29:28,714 - Aguardando conexões...
+2025-01-17 10:29:34,476 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 36412)
+2025-01-17 10:34:57,197 - Destinatário offline: Pedro
+2025-01-17 10:35:08,372 - Erro com o cliente ('127.0.0.1', 36412): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 10:46:28,605 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 10:46:28,606 - Aguardando conexões...
+2025-01-17 10:46:29,753 - Nova conexão: ('127.0.0.1', 36531)
+2025-01-17 10:46:29,754 - Conexões ativas: 1
+2025-01-17 10:46:29,754 - Aguardando conexões...
+2025-01-17 10:46:39,593 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 36531)
+2025-01-17 10:46:53,042 - Erro com o cliente ('127.0.0.1', 36531): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 10:47:38,360 - Nova conexão: ('127.0.0.1', 36543)
+2025-01-17 10:47:38,361 - Conexões ativas: 1
+2025-01-17 10:47:38,361 - Aguardando conexões...
+2025-01-17 10:47:47,522 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 36543)
+2025-01-17 10:48:01,073 - Erro com o cliente ('127.0.0.1', 36543): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto

@@ -74,6 +74,8 @@ def listenForMessages(chatText):
         try:
             message = client_socket.recv(1024).decode('utf-8')
             if message:
+                if message.startswith("GAMBIARRA12345"):
+                    continue
                 chatText.after(0, lambda: updateChatText(chatText, message))
         except Exception as e:
             print(f"Erro ao ouvir mensagens: {e}")
@@ -113,10 +115,33 @@ def loadPreviousMessages(username, chat_text):
     except json.JSONDecodeError:
         messagebox.showerror("Erro", f"Resposta do servidor inválida: {response}")
 
+def updateUserList(userListbox, username):
+    def updateUserListThread():
+        response = sendToServer(f"GET_USERS {username}")
+        try:
+            users = response.split(" ")
+            userListbox.delete(0, 'end')  
+            for user in users:
+                if user != username and user != "GAMBIARRA12345":
+                    userListbox.insert('end', user)
+        except:
+            messagebox.showerror("Erro", f"Resposta inválida do servidor: {response}")
+    threading.Thread(target=updateUserListThread,daemon=True).start()
+    
+
 def openChatWindow(username):
     chatWindow = tk.Tk()
     chatWindow.title(f"Chat - {username}")
-    chatWindow.geometry("400x400")
+    chatWindow.geometry("800x800")
+
+    userFrame = tk.Frame(chatWindow, width=150)
+    userFrame.pack(side='left', fill='y')
+
+    userListBox = tk.Listbox(userFrame)
+    userListBox.pack(fill='both', expand=True)
+
+    tk.Button(userFrame, text="Atualizar", command=lambda: updateUserList(userListBox, username)).pack(pady=5)
+
     
     recipient_label = tk.Label(chatWindow, text="Destinatário:")
     recipient_label.pack(pady=(10, 0))
@@ -140,4 +165,3 @@ def openChatWindow(username):
     chatWindow.mainloop()
 
 root.mainloop()
-

@@ -37,8 +37,6 @@ def getMessagesForUser(username):
     saveMessages(messages)
     return userMessages
 
-
-
 def loadUsers():
     if not os.path.exists(usersFile ):
         return {}
@@ -108,7 +106,17 @@ def handleClient(client_socket, client_address):
                     response = json.dumps(userMessages)
                 else:
                     response = "Erro: Número de argumentos inválido para este processo."
-            
+
+            elif command == "GET_USERS":
+                if len(args) == 1:
+                    username = args[0]
+                    response = loadUsers()
+                    usernames = list(response.keys())
+                    usernamesString = " ".join(usernames)
+                    response = usernamesString
+                else:
+                    response = "Erro: Número de argumentos inválidos para este processo"
+
             elif command == "MESSAGE":
                 if len(args) >= 3:
                     sender = args[0]
