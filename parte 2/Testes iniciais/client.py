@@ -113,27 +113,93 @@ def loadPreviousMessages(username, chat_text):
     except json.JSONDecodeError:
         messagebox.showerror("Erro", f"Resposta do servidor inválida: {response}")
 
+def listChats(username):
+    response = sendToServer(f"LIST_CHATS {username}")
+    try:
+        return json.loads(response)
+    except json.JSONDecodeError:
+        messagebox.showerror("Erro", f"Resposta do servidor inválida: {response}")
+        return []
+    
 def openChatWindow(username):
     chatWindow = tk.Tk()
     chatWindow.title(f"Chat - {username}")
     chatWindow.geometry("400x400")
     
-    recipient_label = tk.Label(chatWindow, text="Destinatário:")
-    recipient_label.pack(pady=(10, 0))
+    chatListFrame = tk.Frame(chatWindow)
+    chatListFrame.pack(side='left', fill='y', padx=10, pady=10)
+    chatListLabel = tk.Label(chatListFrame, text="Conversas:")
+    chatListLabel.pack()
+    chatListBox = tk.Listbox(chatListFrame)
+    chatListBox.pack(fill='both', expand=True)
+
+    # Atualizar lista de chats
+    def updateChatList():
+        chats = listChats(username)
+        chatListBox.delete(0, 'end')
+        for chat in chats:
+            chatListBox.insert('end', chat)
+
+    def populateChatList(username):
+        response = sendToServer(f"LIST_CHATS {username}")
+        try:
+            chat_users = json.loads(response)
+            chatListBox.delete(0, 'end')  # Limpa a lista de chats
+            for user in chat_users:
+                chatListBox.insert('end', user)
+        except json.JSONDecodeError:
+            messagebox.showerror("Erro", f"Resposta do servidor inválida: {response}")
     
-    recipientEntry = tk.Entry(chatWindow)
+    updateChatList()
+
+    chatFrame = tk.Frame(chatWindow)
+    chatFrame.pack(side='right', fill='both', expand=True, padx=10, pady=10)
+    
+    recipient_label = tk.Label(chatFrame, text="Destinatário:")
+    recipient_label.pack(pady=(10, 0))
+    recipientEntry = tk.Entry(chatFrame)
     recipientEntry.pack(padx=10, pady=5, fill='x')
     
-    chatText = tk.Text(chatWindow, state='disabled', wrap='word', bg='lightgray', fg='black')
+    chatText = tk.Text(chatFrame, state='disabled', wrap='word', bg='lightgray', fg='black')
     chatText.pack(padx=10, pady=10, fill='both', expand=True)
     
-    messageEntry = tk.Entry(chatWindow)
+    messageEntry = tk.Entry(chatFrame)
     messageEntry.pack(padx=10, pady=(0, 10), fill='x', side='left', expand=True)
     
-    sendButton = tk.Button(chatWindow, text="Enviar", command=lambda: sendMessage(username, recipientEntry, messageEntry))
+    sendButton = tk.Button(chatFrame, text="Enviar", command=lambda: sendMessage(username, recipientEntry, messageEntry))
     sendButton.pack(padx=10, pady=(0, 10), side='right')
-    
     loadPreviousMessages(username, chatText)
+
+    def loadChat(event):
+        try:
+            # Verifica se há um item selecionado na lista
+            selected_index = chatListBox.curselection()
+            if not selected_index:
+                return  # Nenhum item selecionado, não faz nada
+
+            selectedUser = chatListBox.get(selected_index)
+            chatText.configure(state='normal')
+            chatText.delete('1.0', 'end')  # Limpa o texto antigo
+
+            # Solicita mensagens do servidor
+            response = sendToServer(f"GET_CHAT {username} {selectedUser}")
+            messages = json.loads(response)
+
+            # Exibe as mensagens no campo de texto
+            for message in messages:
+                chatText.insert('end', f"{message['sender']}: {message['content']}\n")
+            chatText.configure(state='disabled')
+
+            # Atualiza o destinatário no campo de entrada
+            recipientEntry.delete(0, 'end')
+            recipientEntry.insert(0, selectedUser)
+
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro ao carregar chat: {e}")
+
+
+    chatListBox.bind('<<ListboxSelect>>', loadChat)
+    populateChatList(username)
 
     threading.Thread(target=listenForMessages, args=(chatText,) , daemon=True).start()
 

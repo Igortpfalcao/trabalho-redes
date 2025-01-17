@@ -37,7 +37,9 @@ def getMessagesForUser(username):
     saveMessages(messages)
     return userMessages
 
-
+def getMessagesForChat(user1, user2):
+    # Recupera as mensagens entre user1 e user2
+    return messages.get(user1, {}).get(user2, [])
 
 def loadUsers():
     if not os.path.exists(usersFile ):
@@ -131,8 +133,25 @@ def handleClient(client_socket, client_address):
                         logEvent(f"Destinatário offline: {recipient}")
                 else:
                     response = "Erro: Argumentos insuficientes para enviar mensagem"
+            elif command == "GET_CHAT":
+                if len(args) == 2:
+                    user1 = args[0]
+                    user2 = args[1]
+                    chatMessages = getMessagesForChat(user1, user2)
+                    response = json.dumps(chatMessages)
+                else:
+                    response = "Erro: Número de argumentos inválido para GET_CHAT"
             
+            elif command == "LIST_CHATS":
+                if len(args) == 1:
+                    username = args[0]
+                    chats = list(messages.get(username, {}).keys())
+                    response = json.dumps(chats)
+                else:
+                    response = json.dumps({"status": "error", "message": "Número de argumentos inválido para LIST_CHATS"})
+
             client_socket.sendall(response.encode('utf-8'))
+
 
     except Exception as e:
         logEvent(f"Erro com o cliente {client_address}: {e}")

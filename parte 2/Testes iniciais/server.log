@@ -429,3 +429,36 @@
 2025-01-17 02:42:04,928 - Aguardando conexões...
 2025-01-17 02:42:12,488 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 58574)
 2025-01-17 02:42:14,596 - Erro com o cliente ('127.0.0.1', 58574): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 04:01:45,019 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 04:01:45,019 - Aguardando conexões...
+2025-01-17 04:01:47,206 - Nova conexão: ('127.0.0.1', 59973)
+2025-01-17 04:01:47,208 - Conexões ativas: 1
+2025-01-17 04:01:47,208 - Aguardando conexões...
+2025-01-17 04:01:52,926 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 59973)
+2025-01-17 04:01:58,923 - Erro com o cliente ('127.0.0.1', 59973): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-17 06:03:57,697 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-17 06:03:57,698 - Servidor encerrado.
+2025-01-17 06:03:59,125 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-17 06:03:59,125 - Servidor encerrado.
+2025-01-17 06:03:59,911 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-17 06:03:59,911 - Servidor encerrado.
+2025-01-17 06:04:03,929 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 06:04:03,929 - Aguardando conexões...
+2025-01-17 06:04:06,890 - Nova conexão: ('127.0.0.1', 62423)
+2025-01-17 06:04:06,891 - Conexões ativas: 1
+2025-01-17 06:04:06,891 - Aguardando conexões...
+2025-01-17 06:04:12,825 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 62423)
+2025-01-17 06:04:42,953 - Destinatário offline: Pedro
+2025-01-17 06:05:33,433 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 06:05:33,433 - Aguardando conexões...
+2025-01-17 06:05:35,129 - Nova conexão: ('127.0.0.1', 62468)
+2025-01-17 06:05:35,129 - Conexões ativas: 1
+2025-01-17 06:05:35,129 - Aguardando conexões...
+2025-01-17 06:05:40,623 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 62468)
+2025-01-17 06:15:09,065 - Servidor iniciado em 127.0.0.1:5000
+2025-01-17 06:15:09,065 - Aguardando conexões...
+2025-01-17 06:15:10,993 - Nova conexão: ('127.0.0.1', 62570)
+2025-01-17 06:15:10,994 - Conexões ativas: 1
+2025-01-17 06:15:10,994 - Aguardando conexões...
+2025-01-17 06:15:17,384 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 62570)
+2025-01-17 06:15:18,274 - Erro com o cliente ('127.0.0.1', 62570): 'list' object has no attribute 'keys'
