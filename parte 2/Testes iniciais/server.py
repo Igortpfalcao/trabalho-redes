@@ -4,42 +4,35 @@ import logging
 import hashlib
 import json
 import os
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad, unpad
+from Crypto.Random import get_random_bytes
+import base64
+
+KEY = b'Sixteen byte key'
+
+def encryptMessage(message):
+    cipher = AES.new(KEY, AES.MODE_CBC)
+    ct_bytes = cipher.encrypt(pad(message.encode(), AES.block_size))
+    iv = base64.b64encode(cipher.iv).decode('utf-8')
+    ct = base64.b64encode(ct_bytes).decode('utf-8')
+    return iv, ct
+
+def decryptMessage(iv, ct):
+    iv = base64.b64decode(iv)
+    ct = base64.b64decode(ct)
+    cipher = AES.new(KEY, AES.MODE_CBC, iv=iv)
+    decrypted = unpad(cipher.decrypt(ct), AES.block_size).decode('utf-8')
+    return decrypted
 
 logging.basicConfig(filename= 'server.log', level = logging.INFO, format= '%(asctime)s - %(message)s')
 
 def logEvent(message):
     logging.info(message)
 
-messagesFile = 'messages.json'
 usersFile = 'users.json'
 connectedClients = {}
 
-def loadMessages():
-    if not os.path.exists(messagesFile):
-        return {}
-    with open(messagesFile, 'r') as file:
-        return json.load(file)
-    
-def saveMessages(messages):
-    with open(messagesFile, 'w') as file:
-        json.dump(messages, file)
-
-messages = loadMessages()
-
-def saveMessage(sender, recipient, content):
-    if recipient not in messages:
-        messages[recipient] = []
-    messages[recipient].append({"sender": sender, "content": content})
-    saveMessages(messages)
-
-def getMessagesForUser(username):
-    userMessages = messages.get(username, [])
-    saveMessages(messages)
-    return userMessages
-
-def getMessagesForChat(user1, user2):
-    # Recupera as mensagens entre user1 e user2
-    return messages.get(user1, {}).get(user2, [])
 
 def loadUsers():
     if not os.path.exists(usersFile ):
@@ -71,87 +64,74 @@ def handleClient(client_socket, client_address):
     try:
         username = None
         while True:
-            request = client_socket.recv(1024).decode('utf-8').strip()
-            if not request:
-                logEvent(f"Cliente desconectado: {client_address}")
-                break
+            encryptedRequest = client_socket.recv(1024).decode('utf-8').strip()
+            logEvent(encryptedRequest)
+            if encryptedRequest.split()[0] == "GET_USERS":
+                logEvent("entrou aqui")
+                logEvent
+                username = args[0]
+                response = loadUsers()
+                usernames = list(response.keys())
+                usernamesString = " ".join(usernames)
+                response = usernamesString
+                logEvent(response)
+                client_socket.sendall(response.encode('utf-8'))
+            else:
+                if not encryptedRequest:
+                    logEvent(f"Cliente desconectado: {client_address}")
+                    break
+                iv, ct = encryptedRequest.split()
+                decryptedRequest = decryptMessage(iv, ct)
+                request = decryptedRequest.split()
+                command = request[0]
+                args = request[1:]
 
-            request = request.split()
-            command = request[0]
-            args = request[1:]
-
-            if command == "LOGIN":
-                if len(args) == 2:
-                    username, password = args
-                    if authenticateUser(username, password):
-                        response = 'Login bem sucedido'
-                        logEvent(f"Novo login do usuário {username} a partir do endereço {client_address}")
-                        connectedClients[username] = client_socket
+                if command == "LOGIN":
+                    if len(args) == 2:
+                        username, password = args
+                        if authenticateUser(username, password):
+                            response = 'Login bem sucedido'
+                            logEvent(f"Novo login do usuário {username} a partir do endereço {client_address}")
+                            connectedClients[username] = client_socket
+                        else:
+                            response = "Erro: Login ou senha incorretos"
+                            logEvent(f"tentativa falha de login a partir do endereço {client_address}") 
                     else:
-                        response = "Erro: Login ou senha incorretos"
-                        logEvent(f"tentativa falha de login a partir do endereço {client_address}") 
-                else:
-                    response = "Erro: Número de argumentos inválido para login"
+                        response = "Erro: Número de argumentos inválido para login"
 
-            elif command == "REGISTER":
-                if len(args) == 2:
-                    username, password = args
-                    if registerUser(username, password):
-                        response = "Usuário cadastrado com sucesso."
+                elif command == "REGISTER": 
+                    if len(args) == 2:
+                        username, password = args
+                        if registerUser(username, password):
+                            response = "Usuário cadastrado com sucesso."
+                        else:
+                            response = "Erro: Usuário já está em uso"
                     else:
-                        response = "Erro: Usuário já está em uso"
-                else:
-                    response = "Erro: Número de argumentos inválido para login"
-            
-            elif command == "GET_MESSAGES":
-                if len(args) == 1:
-                    username = args[0]
-                    userMessages = getMessagesForUser(username)
-                    response = json.dumps(userMessages)
-                else:
-                    response = "Erro: Número de argumentos inválido para este processo."
-            
-            elif command == "MESSAGE":
-                if len(args) >= 3:
-                    sender = args[0]
-                    recipient = args[1]
-                    content = " ".join(args[2:])
-                    saveMessage(sender, recipient, content) 
-                    try:
-                        client_socket.sendall(f"Você: {content}".encode('utf-8'))  
-                    except Exception as e:
-                        logEvent(f"Erro ao enviar confirmação ao remetente {sender}: {e}")
+                        response = "Erro: Número de argumentos inválido para login"
 
-                    if recipient in connectedClients:
-                        recipientSocket = connectedClients[recipient]
+                elif command == "MESSAGE":
+                    if len(args) >= 3:
+                        sender = args[0]
+                        recipient = args[1]
+                        content = " ".join(args[2:])
                         try:
-                            recipientSocket.sendall(f"Nova mensagem de {sender}: {content}".encode('utf-8'))
+                            client_socket.sendall(f"Você: {content}".encode('utf-8'))  
                         except Exception as e:
-                            logEvent(f"Erro ao enviar mensagem para {recipient}: {e}")
+                            logEvent(f"Erro ao enviar confirmação ao remetente {sender}: {e}")
+
+                        if recipient in connectedClients:
+                            recipientSocket = connectedClients[recipient]
+                            try:
+                                recipientSocket.sendall(f"Nova mensagem de {sender}: {content}".encode('utf-8'))
+                            except Exception as e:
+                                logEvent(f"Erro ao enviar mensagem para {recipient}: {e}")
+                        else:
+
+                            logEvent(f"Destinatário offline: {recipient}")
                     else:
-
-                        logEvent(f"Destinatário offline: {recipient}")
-                else:
-                    response = "Erro: Argumentos insuficientes para enviar mensagem"
-            elif command == "GET_CHAT":
-                if len(args) == 2:
-                    user1 = args[0]
-                    user2 = args[1]
-                    chatMessages = getMessagesForChat(user1, user2)
-                    response = json.dumps(chatMessages)
-                else:
-                    response = "Erro: Número de argumentos inválido para GET_CHAT"
-            
-            elif command == "LIST_CHATS":
-                if len(args) == 1:
-                    username = args[0]
-                    chats = list(messages.get(username, {}).keys())
-                    response = json.dumps(chats)
-                else:
-                    response = json.dumps({"status": "error", "message": "Número de argumentos inválido para LIST_CHATS"})
-
-            client_socket.sendall(response.encode('utf-8'))
-
+                        response = "Erro: Argumentos insuficientes para enviar mensagem"
+                iv, ct = encryptMessage(response)
+                client_socket.sendall(f"{iv} {ct}".encode('utf-8'))
 
     except Exception as e:
         logEvent(f"Erro com o cliente {client_address}: {e}")
@@ -166,7 +146,6 @@ def start_server(host='127.0.0.1', port=5000):
         server_socket.bind((host, port))
         server_socket.listen(5)
         logEvent(f"Servidor iniciado em {host}:{port}")
-
         while True:
             logEvent("Aguardando conexões...")
             client_socket, client_address = server_socket.accept()

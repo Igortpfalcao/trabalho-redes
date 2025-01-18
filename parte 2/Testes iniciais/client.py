@@ -3,6 +3,26 @@ import tkinter as tk
 from tkinter import messagebox
 import json
 import threading
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad, unpad
+from Crypto.Random import get_random_bytes
+import base64
+
+KEY = b'Sixteen byte key'
+
+def encryptMessage(message):
+    cipher = AES.new(KEY, AES.MODE_CBC)
+    ct_bytes = cipher.encrypt(pad(message.encode(), AES.block_size))
+    iv = base64.b64encode(cipher.iv).decode('utf-8')
+    ct = base64.b64encode(ct_bytes).decode('utf-8')
+    return iv, ct
+
+def decryptMessage(iv, ct):
+    iv = base64.b64decode(iv)
+    ct = base64.b64decode(ct)
+    cipher = AES.new(KEY, AES.MODE_CBC, iv=iv)
+    decrypted = unpad(cipher.decrypt(ct), AES.block_size).decode('utf-8')
+    return decrypted
 
 root = tk.Tk()  
 root.title("Cliente - Login")
@@ -14,11 +34,22 @@ except Exception as e:
     messagebox.showerror("Erro", f"Não foi possível conectar ao servidor: {e}")
     root.destroy()
 
-def sendToServer(data):
+def sendToServerDecrypted(data):
     try:
         client_socket.sendall(data.encode("utf-8"))
         response = client_socket.recv(1024).decode('utf-8')
         return response
+    except Exception as e:
+        return f"Erro ao conectar com o servidor: {e}"
+
+def sendToServer(data):
+    iv, ct = encryptMessage(data)
+    try:
+        client_socket.sendall(f"{iv} {ct}".encode("utf-8"))
+        response = client_socket.recv(1024).decode('utf-8')
+        iv, ct = response.split()
+        decryptedResponse = decryptMessage(iv, ct)
+        return decryptedResponse
     except Exception as e:
         return f"Erro ao conectar com o servidor: {e}"
 
@@ -74,6 +105,8 @@ def listenForMessages(chatText):
         try:
             message = client_socket.recv(1024).decode('utf-8')
             if message:
+                if message.startswith("GAMBIARRA12345"):
+                    continue
                 chatText.after(0, lambda: updateChatText(chatText, message))
         except Exception as e:
             print(f"Erro ao ouvir mensagens: {e}")
@@ -84,81 +117,57 @@ def updateChatText(chatText, message):
     chatText.insert('end', message + '\n')
     chatText.configure(state='disabled')
 
-def sendMessage(sender, recipientEntry, messageEntry):
-    recipient = recipientEntry.get().strip()
+def sendMessage(sender, selectedUser, messageEntry):
     message = messageEntry.get().strip()
 
-    if not recipient or not message:
+    if not selectedUser or not message:
         messagebox.showerror("Erro", "Por favor, preencha todos os campos.")
         return
 
     def send_message_thread():
-        sendToServer(f"MESSAGE {sender} {recipient} {message}")
-        messageEntry.delete(0, 'end')
+        sendToServer(f"MESSAGE {sender} {selectedUser} {message}")
+        messageEntry.delete(0, 'end')   
 
     threading.Thread(target=send_message_thread, daemon=True).start()
 
-def loadPreviousMessages(username, chat_text):
-    response = sendToServer(f"GET_MESSAGES {username}")
-    if response.strip() == "[]":  
-        messagebox.showinfo("Informação", "Nenhuma mensagem encontrada.")
-        return
-    
-    try:
-        messages = json.loads(response)  
-        chat_text.configure(state='normal')
-        for message in messages:
-            chat_text.insert('end', f"{message['sender']}: {message['content']}\n")
-        chat_text.configure(state='disabled')
-    except json.JSONDecodeError:
-        messagebox.showerror("Erro", f"Resposta do servidor inválida: {response}")
 
-def listChats(username):
-    response = sendToServer(f"LIST_CHATS {username}")
-    try:
-        return json.loads(response)
-    except json.JSONDecodeError:
-        messagebox.showerror("Erro", f"Resposta do servidor inválida: {response}")
-        return []
+def updateUserList(userListbox, username):
+    def updateUserListThread():
+        response = sendToServerDecrypted(f"GET_USERS {username}")
+        try:
+            users = response.split(" ")
+            userListbox.delete(0, 'end')  
+            for user in users:
+                if user != username and user != "GAMBIARRA12345":
+                    userListbox.insert('end', user)
+        except:
+            messagebox.showerror("Erro", f"Resposta inválida do servidor: {response}")
+    threading.Thread(target=updateUserListThread,daemon=True).start()
     
+def cleanChatBox(chatText):
+    chatText.configure(state='normal')
+    chatText.delete('1.0', 'end')
+    chatText.configure(state='disabled')
+  
+
 def openChatWindow(username):
     chatWindow = tk.Tk()
     chatWindow.title(f"Chat - {username}")
-    chatWindow.geometry("400x400")
-    
-    chatListFrame = tk.Frame(chatWindow)
-    chatListFrame.pack(side='left', fill='y', padx=10, pady=10)
-    chatListLabel = tk.Label(chatListFrame, text="Conversas:")
-    chatListLabel.pack()
-    chatListBox = tk.Listbox(chatListFrame)
-    chatListBox.pack(fill='both', expand=True)
+    chatWindow.geometry("800x800")
 
-    # Atualizar lista de chats
-    def updateChatList():
-        chats = listChats(username)
-        chatListBox.delete(0, 'end')
-        for chat in chats:
-            chatListBox.insert('end', chat)
+    userFrame = tk.Frame(chatWindow, width=150)
+    userFrame.pack(side='left', fill='y')
 
-    def populateChatList(username):
-        response = sendToServer(f"LIST_CHATS {username}")
-        try:
-            chat_users = json.loads(response)
-            chatListBox.delete(0, 'end')  # Limpa a lista de chats
-            for user in chat_users:
-                chatListBox.insert('end', user)
-        except json.JSONDecodeError:
-            messagebox.showerror("Erro", f"Resposta do servidor inválida: {response}")
-    
-    updateChatList()
+    userListBox = tk.Listbox(userFrame)
+    userListBox.pack(fill='both', expand=True)
+
+    tk.Button(userFrame, text="Atualizar", command=lambda: updateUserList(userListBox, username)).pack(pady=5)
 
     chatFrame = tk.Frame(chatWindow)
-    chatFrame.pack(side='right', fill='both', expand=True, padx=10, pady=10)
+    chatFrame.pack(side='right', fill='both', expand=True)
     
-    recipient_label = tk.Label(chatFrame, text="Destinatário:")
+    recipient_label = tk.Label(chatFrame, text="Conversa com:")
     recipient_label.pack(pady=(10, 0))
-    recipientEntry = tk.Entry(chatFrame)
-    recipientEntry.pack(padx=10, pady=5, fill='x')
     
     chatText = tk.Text(chatFrame, state='disabled', wrap='word', bg='lightgray', fg='black')
     chatText.pack(padx=10, pady=10, fill='both', expand=True)
@@ -166,44 +175,24 @@ def openChatWindow(username):
     messageEntry = tk.Entry(chatFrame)
     messageEntry.pack(padx=10, pady=(0, 10), fill='x', side='left', expand=True)
     
-    sendButton = tk.Button(chatFrame, text="Enviar", command=lambda: sendMessage(username, recipientEntry, messageEntry))
+    sendButton = tk.Button(chatFrame, text="Enviar", state='disabled')
     sendButton.pack(padx=10, pady=(0, 10), side='right')
-    loadPreviousMessages(username, chatText)
-
-    def loadChat(event):
+    
+    def onUserSelect(event):
         try:
-            # Verifica se há um item selecionado na lista
-            selected_index = chatListBox.curselection()
-            if not selected_index:
-                return  # Nenhum item selecionado, não faz nada
+            selectedUser = userListBox.get(userListBox.curselection())
+            recipient_label.config(text=f"Conversa com: {selectedUser}")
+            sendButton.config(state='normal', command=lambda: sendMessage(username, selectedUser, messageEntry))
+            threading.Thread(target=cleanChatBox, args=(chatText,) , daemon=True).start()     
+        except tk.TclError:
+            pass
 
-            selectedUser = chatListBox.get(selected_index)
-            chatText.configure(state='normal')
-            chatText.delete('1.0', 'end')  # Limpa o texto antigo
+    userListBox.bind('<<ListboxSelect>>', onUserSelect)
 
-            # Solicita mensagens do servidor
-            response = sendToServer(f"GET_CHAT {username} {selectedUser}")
-            messages = json.loads(response)
-
-            # Exibe as mensagens no campo de texto
-            for message in messages:
-                chatText.insert('end', f"{message['sender']}: {message['content']}\n")
-            chatText.configure(state='disabled')
-
-            # Atualiza o destinatário no campo de entrada
-            recipientEntry.delete(0, 'end')
-            recipientEntry.insert(0, selectedUser)
-
-        except Exception as e:
-            messagebox.showerror("Erro", f"Erro ao carregar chat: {e}")
-
-
-    chatListBox.bind('<<ListboxSelect>>', loadChat)
-    populateChatList(username)
-
+    updateUserList(userListBox, username)
+    
     threading.Thread(target=listenForMessages, args=(chatText,) , daemon=True).start()
 
     chatWindow.mainloop()
 
 root.mainloop()
-
