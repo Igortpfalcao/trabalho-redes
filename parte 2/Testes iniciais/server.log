@@ -1589,3 +1589,34 @@
 2025-01-18 04:57:43,811 - ciZ1xBIZrSITr2GoUuDCUg== B48IadG/hh9vX7mDwipD399y2QyPeK6rpKEcFgBzmOc=
 2025-01-18 04:57:47,946 - lACAfW2vYSZGVpB7wiaHBQ== ruJxF/ubvVdyAiOxiy6hrRqQ/9DwCEp+F1vEiAzIdkc=
 2025-01-18 04:58:17,535 - Erro com o cliente ('127.0.0.1', 58607): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 05:43:21,515 - Servidor iniciado em 127.0.0.1:5000
+2025-01-18 05:43:21,515 - Aguardando conexões...
+2025-01-18 05:43:24,078 - Nova conexão: ('127.0.0.1', 59034)
+2025-01-18 05:43:24,079 - Conexões ativas: 1
+2025-01-18 05:43:24,079 - Aguardando conexões...
+2025-01-18 05:43:30,951 - G3ojkC5Uh23aVwlC4a85+Q== niuHJpwMNU4bDOcCE/VZ/swbXaIGIPbHrzUCFrFA3nY=
+2025-01-18 05:43:30,952 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 59034)
+2025-01-18 05:43:31,730 - GET_USERS Lucas
+2025-01-18 05:43:31,730 - entrou aqui
+2025-01-18 05:43:31,731 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 05:43:31,731 - Erro com o cliente ('127.0.0.1', 59034): Invalid base64-encoded string: number of data characters (5) cannot be 1 more than a multiple of 4
+2025-01-18 05:45:20,647 - Nova conexão: ('127.0.0.1', 59061)
+2025-01-18 05:45:20,647 - Conexões ativas: 1
+2025-01-18 05:45:20,647 - Aguardando conexões...
+2025-01-18 05:45:26,694 - ge49bMFKq0hA+a1BVRfGlg== xwiAbas2oWwrd0mf0mmWB6MGPRhJoPJ3oEHSQnRQ5TE=
+2025-01-18 05:45:26,695 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 59061)
+2025-01-18 05:45:27,538 - GET_USERS Lucas
+2025-01-18 05:45:27,538 - entrou aqui
+2025-01-18 05:45:27,539 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 05:45:27,539 - Erro com o cliente ('127.0.0.1', 59061): Invalid base64-encoded string: number of data characters (5) cannot be 1 more than a multiple of 4
+2025-01-18 05:46:22,400 - Servidor iniciado em 127.0.0.1:5000
+2025-01-18 05:46:22,400 - Aguardando conexões...
+2025-01-18 05:46:24,433 - Nova conexão: ('127.0.0.1', 59062)
+2025-01-18 05:46:24,434 - Conexões ativas: 1
+2025-01-18 05:46:24,434 - Aguardando conexões...
+2025-01-18 05:46:30,742 - 9BTTyeXzPqxmW44hUrWVdA== XZYgdHEq2ltMn+W2pbznqmpG/wrxkrD+RPJOfmi4114=
+2025-01-18 05:46:30,742 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 59062)
+2025-01-18 05:46:31,530 - GET_USERS Lucas
+2025-01-18 05:46:31,531 - entrou aqui
+2025-01-18 05:46:31,531 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 05:46:31,531 - Erro com o cliente ('127.0.0.1', 59062): Invalid base64-encoded string: number of data characters (5) cannot be 1 more than a multiple of 4
