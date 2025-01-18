@@ -1620,3 +1620,18 @@
 2025-01-18 05:46:31,531 - entrou aqui
 2025-01-18 05:46:31,531 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
 2025-01-18 05:46:31,531 - Erro com o cliente ('127.0.0.1', 59062): Invalid base64-encoded string: number of data characters (5) cannot be 1 more than a multiple of 4
+2025-01-18 05:57:55,237 - Servidor iniciado em 127.0.0.1:5000
+2025-01-18 05:57:55,237 - Aguardando conexões...
+2025-01-18 05:57:57,666 - Nova conexão: ('127.0.0.1', 59252)
+2025-01-18 05:57:57,667 - Conexões ativas: 1
+2025-01-18 05:57:57,667 - Aguardando conexões...
+2025-01-18 05:58:02,248 - Vy0KRbn5Zrwylmo39XwZtg== jAU3EWtm4eDIPdK0mHGNrQSZYIdNczQAZJERQPtGg6k=
+2025-01-18 05:58:02,249 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 59252)
+2025-01-18 05:58:03,029 - GET_USERS Lucas
+2025-01-18 05:58:03,029 - entrou aqui
+2025-01-18 05:58:03,030 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 05:58:09,248 - Y4qtUtQYk15/4z2T+lDKXg== 09UI9Q7UNh7uiVoFXwX44uivWIf07ZekoN1pDeacQME=
+2025-01-18 05:58:09,249 - Destinatário offline: Igor
+2025-01-18 05:58:21,897 - RLjPC4qx6IuPu/LJdc5UGQ== A7eeq5uvZud7Ou8NsVz8IGojAKpnTnYaxhoLY/d0qjY=
+2025-01-18 05:58:21,897 - Destinatário offline: Pedro
+2025-01-18 05:58:24,631 - Erro com o cliente ('127.0.0.1', 59252): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
