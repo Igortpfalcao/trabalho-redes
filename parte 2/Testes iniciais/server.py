@@ -174,10 +174,14 @@ def sendFileToClient(sender, recipient, filepath, host='127.0.0.1', File_port = 
 
 def handleFileTransfer(client_socket):
     try:
+        # Recebe os metadados (nome do arquivo, tamanho e destinatário)
         metadata = client_socket.recv(1024).decode('utf-8')
-        filename, file_size = metadata.split('|')
+        filename, file_size, recipient = metadata.split('|')
         file_size = int(file_size)
 
+        print(f"Recebendo arquivo {filename} para {recipient}.")
+
+        # Cria o arquivo no servidor
         with open(f"received_{filename}", 'wb') as f:
             received = 0
             while received < file_size:
@@ -186,6 +190,17 @@ def handleFileTransfer(client_socket):
                 received += len(chunk)
         
         print(f"Arquivo {filename} recebido com sucesso.")
+        
+        # Após receber o arquivo, envia para o destinatário
+        if recipient in connectedClients:
+            recipient_socket = connectedClients[recipient]
+            with open(f"received_{filename}", 'rb') as f:
+                while chunk := f.read(1024):
+                    recipient_socket.sendall(chunk)
+            print(f"Arquivo {filename} enviado para {recipient}.")
+        else:
+            print(f"Destinatário {recipient} não está online.")
+
     except Exception as e:
         print(f"Erro durante a transferência de arquivo: {e}")
     finally:

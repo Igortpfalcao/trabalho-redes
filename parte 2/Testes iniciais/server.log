@@ -1745,3 +1745,28 @@
 2025-01-18 07:39:32,864 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
 2025-01-18 07:40:38,512 - Erro com o cliente ('127.0.0.1', 60503): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
 2025-01-18 07:40:40,134 - Erro com o cliente ('127.0.0.1', 60502): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 08:01:50,913 - Servidor de arquivos ouvindo em 127.0.0.1:5001
+2025-01-18 08:01:50,913 - Servidor iniciado em 127.0.0.1:5000
+2025-01-18 08:01:50,913 - Aguardando conexões...
+2025-01-18 08:01:52,872 - Nova conexão: ('127.0.0.1', 60775)
+2025-01-18 08:01:52,872 - Conexões ativas: 2
+2025-01-18 08:01:52,872 - Aguardando conexões...
+2025-01-18 08:01:57,924 - PkhixXyRjbf2kv8JMczUQQ== iPmOoOA3GphjYrbdJhrWXf5/i7tgzOe7JsFvlEBuj5I=
+2025-01-18 08:01:57,924 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 60775)
+2025-01-18 08:01:59,001 - GET_USERS Lucas
+2025-01-18 08:01:59,001 - entrou aqui
+2025-01-18 08:01:59,002 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 08:02:03,763 - Nova conexão: ('127.0.0.1', 60778)
+2025-01-18 08:02:03,763 - Conexões ativas: 3
+2025-01-18 08:02:03,764 - Aguardando conexões...
+2025-01-18 08:02:10,203 - nDww53bzDiPd1LnXT5yVjQ== jy38DAbgGerIXSVKUIC1BUsxsUYR0BfmFjKDKjThtGI=
+2025-01-18 08:02:10,204 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 60778)
+2025-01-18 08:02:11,199 - GET_USERS Pedro
+2025-01-18 08:02:11,199 - entrou aqui
+2025-01-18 08:02:11,200 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 08:02:29,603 - nd28240WFpgL5U1AUW7vHQ== OwFga/LBCc4uegmemPrtcqNpbYZBb4tupDSu+uNvrcw=
+2025-01-18 08:02:32,108 - LrWIZkhvYlV0XjD7PKZ84w== pgBR+y5NFofyJym1Z8WtpVbUEx2ciUQFGZUe3MFJM9Q=
+2025-01-18 08:03:43,872 - Erro com o cliente ('127.0.0.1', 60775): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 08:03:53,923 - PSA89/YdS/IYsqU31lbQrw== fY0bKzw1LwIYxd7PuriQT4Ga1dJxc4ot7rpyIKijCBY=
+2025-01-18 08:03:53,923 - Destinatário offline: Lucas
+2025-01-18 08:04:06,088 - Erro com o cliente ('127.0.0.1', 60778): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
