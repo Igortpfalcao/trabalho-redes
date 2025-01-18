@@ -22,16 +22,15 @@ def send_file(recipient, host='127.0.0.1', port=File_port):
 
     try:
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        client_socket.connect((host, port))  # Conecta à porta de arquivo
+        client_socket.connect((host, port))  
 
         file_size = os.path.getsize(filepath)
         filename = os.path.basename(filepath)
 
-        # Envia o nome do arquivo, o tamanho e o destinatário como metadados
-        metadata = f"{filename}|{file_size}|{recipient}".encode('utf-8')  # Inclui o destinatário
+
+        metadata = f"{filename}|{file_size}|{recipient}".encode('utf-8')  
         client_socket.sendall(metadata)
 
-        # Envia o conteúdo do arquivo
         with open(filepath, 'rb') as f:
             while chunk := f.read(1024):
                 client_socket.sendall(chunk)
@@ -46,13 +45,11 @@ def receiveFile(host='127.0.0.1', port=File_port):
     try:
         file_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         file_socket.connect((host, port))
-        
-        # Recebe os metadados (nome do arquivo e tamanho)
+
         metadata = file_socket.recv(1024).decode('utf-8')
         filename, file_size = metadata.split('|')
         file_size = int(file_size)
 
-        # Pergunta ao usuário onde salvar o arquivo
         save_path = tk.filedialog.asksaveasfilename(initialfile=filename, title="Salvar arquivo")
         if not save_path:
             messagebox.showinfo("Cancelado", "Recebimento do arquivo foi cancelado.")
@@ -221,7 +218,7 @@ def cleanChatBox(chatText):
 def openChatWindow(username):
     chatWindow = tk.Tk()
     chatWindow.title(f"Chat - {username}")
-    chatWindow.geometry("800x800")
+    chatWindow.geometry("500x500")
 
     userFrame = tk.Frame(chatWindow, width=150)
     userFrame.pack(side='left', fill='y')

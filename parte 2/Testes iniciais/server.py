@@ -145,43 +145,40 @@ File_port = 5001
 
 def sendFileToClient(sender, recipient, filepath, host='127.0.0.1', File_port = 5001):
     try:
-        # Verifica se o destinatário está conectado
+
         if recipient in connectedClients:
             recipient_socket = connectedClients[recipient]
             file_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             file_socket.connect((host, File_port))
 
-            # Envia o nome e o tamanho do arquivo
+  
             filename = os.path.basename(filepath)
             file_size = os.path.getsize(filepath)
             recipient_socket.sendall(f"{filename}|{file_size}".encode('utf-8'))
 
-            # Envia o conteúdo do arquivo em partes
+
             with open(filepath, 'rb') as f:
                 while True:
-                    data = f.read(1024)  # Lê 1024 bytes por vez
+                    data = f.read(1024) 
                     if not data:
-                        break  # Fim do arquivo
-                    recipient_socket.sendall(data)  # Envia o bloco de dados
+                        break  
+                    recipient_socket.sendall(data)  
 
             logEvent(f"Arquivo {filename} enviado para {recipient} com sucesso!")
         else:
             logEvent(f"Destinatário {recipient} não está online. Arquivo não enviado.")
-            # Se o destinatário não estiver online, você pode querer armazenar o arquivo para enviar mais tarde.
     except Exception as e:
         logEvent(f"Erro ao enviar arquivo para {recipient}: {e}")
 
 
 def handleFileTransfer(client_socket):
     try:
-        # Recebe os metadados (nome do arquivo, tamanho e destinatário)
         metadata = client_socket.recv(1024).decode('utf-8')
         filename, file_size, recipient = metadata.split('|')
         file_size = int(file_size)
 
         print(f"Recebendo arquivo {filename} para {recipient}.")
 
-        # Cria o arquivo no servidor
         with open(f"received_{filename}", 'wb') as f:
             received = 0
             while received < file_size:
@@ -190,8 +187,7 @@ def handleFileTransfer(client_socket):
                 received += len(chunk)
         
         print(f"Arquivo {filename} recebido com sucesso.")
-        
-        # Após receber o arquivo, envia para o destinatário
+
         if recipient in connectedClients:
             recipient_socket = connectedClients[recipient]
             with open(f"received_{filename}", 'rb') as f:
