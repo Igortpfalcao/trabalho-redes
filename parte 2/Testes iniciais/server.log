@@ -1635,3 +1635,113 @@
 2025-01-18 05:58:21,897 - RLjPC4qx6IuPu/LJdc5UGQ== A7eeq5uvZud7Ou8NsVz8IGojAKpnTnYaxhoLY/d0qjY=
 2025-01-18 05:58:21,897 - Destinatário offline: Pedro
 2025-01-18 05:58:24,631 - Erro com o cliente ('127.0.0.1', 59252): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:21:51,797 - Servidor iniciado em 127.0.0.1:5000
+2025-01-18 07:21:51,797 - Servidor de arquivos ouvindo em 127.0.0.1:5001
+2025-01-18 07:21:51,797 - Aguardando conexões...
+2025-01-18 07:21:54,191 - Nova conexão: ('127.0.0.1', 60291)
+2025-01-18 07:21:54,191 - Conexões ativas: 2
+2025-01-18 07:21:54,192 - Aguardando conexões...
+2025-01-18 07:21:59,269 - DsXV37J5c7XEOtESdbF9Gw== SVek9C+t6VaXcQ49I89shm4xzVGOUVAf6/zydXZJv+0=
+2025-01-18 07:21:59,270 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 60291)
+2025-01-18 07:22:00,002 - GET_USERS Lucas
+2025-01-18 07:22:00,003 - entrou aqui
+2025-01-18 07:22:00,003 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:22:05,421 - obPypGd59vh8y4I7dIvEXA== 6A+YAjChxt7/vWrJNIbu3v31B/8ZQ2iCY0GVmpVX4m8=
+2025-01-18 07:22:05,421 - Destinatário offline: ZeroApenas
+2025-01-18 07:22:07,813 - Je6zgwVB89MAUbaiUsZ1Pw== YTRnjuog8TEGJVNVT8ugr/rJu/kH8JaoG/etC3960iM=
+2025-01-18 07:22:07,813 - Destinatário offline: ZeroApenas
+2025-01-18 07:22:09,008 - Erro com o cliente ('127.0.0.1', 60291): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:26:19,737 - Nova conexão: ('127.0.0.1', 60320)
+2025-01-18 07:26:19,738 - Conexões ativas: 2
+2025-01-18 07:26:19,738 - Aguardando conexões...
+2025-01-18 07:26:25,179 - cIaEQlvkvXdbCVRuK0EhtQ== wJ8A0F8Akkg9e8426vcpQmb9FPzoob+Ppmv8uZG8R1o=
+2025-01-18 07:26:25,180 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 60320)
+2025-01-18 07:26:26,100 - GET_USERS Lucas
+2025-01-18 07:26:26,100 - entrou aqui
+2025-01-18 07:26:26,100 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:26:32,126 - Erro com o cliente ('127.0.0.1', 60320): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:31:31,622 - Erro no servidor: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2025-01-18 07:31:31,622 - Servidor encerrado.
+2025-01-18 07:31:35,040 - Servidor iniciado em 127.0.0.1:5000
+2025-01-18 07:31:35,040 - Servidor de arquivos ouvindo em 127.0.0.1:5001
+2025-01-18 07:31:35,041 - Aguardando conexões...
+2025-01-18 07:31:37,674 - Nova conexão: ('127.0.0.1', 60378)
+2025-01-18 07:31:37,675 - Conexões ativas: 2
+2025-01-18 07:31:37,675 - Aguardando conexões...
+2025-01-18 07:31:43,161 - m2RzKBcdjqcuUWBnbYHnLg== 3a/deiFHg6Ibt0RE1FP16uJVWTejJVqkA5kynVQonJg=
+2025-01-18 07:31:43,161 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 60378)
+2025-01-18 07:31:43,978 - GET_USERS Lucas
+2025-01-18 07:31:43,978 - entrou aqui
+2025-01-18 07:31:43,979 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:31:52,119 - Erro com o cliente ('127.0.0.1', 60378): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:33:03,394 - Nova conexão: ('127.0.0.1', 60417)
+2025-01-18 07:33:03,394 - Conexões ativas: 2
+2025-01-18 07:33:03,395 - Aguardando conexões...
+2025-01-18 07:33:09,032 - vpIku91MLT59fl5YNlCOUw== ifEy4QgRkVgouVPG0k/ippudsm3ZHHxuKQKBc8ATlSc=
+2025-01-18 07:33:09,032 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 60417)
+2025-01-18 07:33:10,013 - GET_USERS Lucas
+2025-01-18 07:33:10,013 - entrou aqui
+2025-01-18 07:33:10,013 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:33:16,756 - Erro com o cliente ('127.0.0.1', 60417): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:34:42,774 - Servidor iniciado em 127.0.0.1:5000
+2025-01-18 07:34:42,774 - Servidor de arquivos ouvindo em 127.0.0.1:5001
+2025-01-18 07:34:42,774 - Aguardando conexões...
+2025-01-18 07:34:45,495 - Nova conexão: ('127.0.0.1', 60438)
+2025-01-18 07:34:45,496 - Conexões ativas: 2
+2025-01-18 07:34:45,496 - Aguardando conexões...
+2025-01-18 07:34:50,071 - GwVp5M/mUSLBuVXeV0ccRg== roj7VZM9jp6kgMWN0dExLmgkeU2tw50qVIXJHIqheKI=
+2025-01-18 07:34:50,072 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 60438)
+2025-01-18 07:34:50,932 - GET_USERS Lucas
+2025-01-18 07:34:50,932 - entrou aqui
+2025-01-18 07:34:50,933 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:34:53,459 - Nova conexão: ('127.0.0.1', 60439)
+2025-01-18 07:34:53,459 - Conexões ativas: 3
+2025-01-18 07:34:53,459 - Aguardando conexões...
+2025-01-18 07:34:58,383 - B7ulvhFOxgfAxk8DiDtv/Q== T2yOAJoVZeyoaE6sCHDSqLZRiO1aqDJjqEs7PA0lFyc=
+2025-01-18 07:34:58,383 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 60439)
+2025-01-18 07:34:59,291 - GET_USERS Pedro
+2025-01-18 07:34:59,291 - entrou aqui
+2025-01-18 07:34:59,292 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:35:15,751 - WVxNI7B8D9AcPozDuuPKLw== GcZgv8QGA5FHmYvWiGX8ALpLxJy+W3jMRUMLAvL7ncM=
+2025-01-18 07:38:04,093 - Erro com o cliente ('127.0.0.1', 60438): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:38:05,740 - Erro com o cliente ('127.0.0.1', 60439): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:38:09,765 - Servidor iniciado em 127.0.0.1:5000
+2025-01-18 07:38:09,765 - Servidor de arquivos ouvindo em 127.0.0.1:5001
+2025-01-18 07:38:09,765 - Aguardando conexões...
+2025-01-18 07:38:11,885 - Nova conexão: ('127.0.0.1', 60483)
+2025-01-18 07:38:11,885 - Conexões ativas: 2
+2025-01-18 07:38:11,885 - Aguardando conexões...
+2025-01-18 07:38:16,398 - iiy0jVcyJhvYrF34cWfIlA== 69sfw7PVkkSfIdQfcuHEItS7sXES6mEPbLSHC7/ifG8=
+2025-01-18 07:38:16,399 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 60483)
+2025-01-18 07:38:17,540 - GET_USERS Lucas
+2025-01-18 07:38:17,541 - entrou aqui
+2025-01-18 07:38:17,541 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:38:20,206 - Nova conexão: ('127.0.0.1', 60484)
+2025-01-18 07:38:20,207 - Conexões ativas: 3
+2025-01-18 07:38:20,207 - Aguardando conexões...
+2025-01-18 07:38:27,198 - GOe9zNvltqUOW3A6MMnncA== GAf6mS7ChqPovkRdrdyNLx5M1ZpfOq3MPN5NbU8gkPU=
+2025-01-18 07:38:27,198 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 60484)
+2025-01-18 07:38:28,074 - GET_USERS Pedro
+2025-01-18 07:38:28,074 - entrou aqui
+2025-01-18 07:38:28,074 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:38:45,374 - uNPoktIeknSoicGPEL7wHA== fXUnP3bQFm7SRp3AJqKJwRrPRvoaNQfrGDGMQX1Ciig=
+2025-01-18 07:39:09,247 - Erro com o cliente ('127.0.0.1', 60483): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:39:09,789 - Erro com o cliente ('127.0.0.1', 60484): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:39:15,668 - Nova conexão: ('127.0.0.1', 60502)
+2025-01-18 07:39:15,668 - Conexões ativas: 2
+2025-01-18 07:39:15,669 - Aguardando conexões...
+2025-01-18 07:39:20,429 - ecrn4GT6kdCvz3hlnWK2cw== bKOLL16nLSGFTIyew9LFF3EewcHMEV+FjOU4pLDdAbY=
+2025-01-18 07:39:20,430 - Novo login do usuário Lucas a partir do endereço ('127.0.0.1', 60502)
+2025-01-18 07:39:21,377 - GET_USERS Lucas
+2025-01-18 07:39:21,378 - entrou aqui
+2025-01-18 07:39:21,378 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:39:23,314 - Nova conexão: ('127.0.0.1', 60503)
+2025-01-18 07:39:23,315 - Conexões ativas: 3
+2025-01-18 07:39:23,315 - Aguardando conexões...
+2025-01-18 07:39:32,077 - JOCgxHB0VHIQoYqa0y9+EQ== nlbjgOR2guT4eN7XNyOdePfbD7s6N7dt883dPJQYCJg=
+2025-01-18 07:39:32,078 - Novo login do usuário Pedro a partir do endereço ('127.0.0.1', 60503)
+2025-01-18 07:39:32,863 - GET_USERS Pedro
+2025-01-18 07:39:32,863 - entrou aqui
+2025-01-18 07:39:32,864 - GAMBIARRA12345 Zero Zeroapenas Zeroapenas21 Igor ZeroApenas Pedro Felipe Antônio Lucas
+2025-01-18 07:40:38,512 - Erro com o cliente ('127.0.0.1', 60503): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+2025-01-18 07:40:40,134 - Erro com o cliente ('127.0.0.1', 60502): [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto

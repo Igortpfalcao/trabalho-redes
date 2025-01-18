@@ -1,14 +1,81 @@
 import socket
 import tkinter as tk
 from tkinter import messagebox
+from tkinter import filedialog
 import json
 import threading
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from Crypto.Random import get_random_bytes
 import base64
+import os
 
 KEY = b'Sixteen byte key'
+
+File_port = 5001
+
+def send_file(recipient, host='127.0.0.1', port=File_port):
+    filepath = tk.filedialog.askopenfilename(title="Selecione um arquivo")
+    if not filepath:
+        messagebox.showinfo("Cancelado", "Nenhum arquivo selecionado.")
+        return
+
+    try:
+        client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        client_socket.connect((host, port))  # Conecta à porta de arquivo
+
+        file_size = os.path.getsize(filepath)
+        filename = os.path.basename(filepath)
+
+        # Envia o nome do arquivo, o tamanho e o destinatário como metadados
+        metadata = f"{filename}|{file_size}|{recipient}".encode('utf-8')  # Inclui o destinatário
+        client_socket.sendall(metadata)
+
+        # Envia o conteúdo do arquivo
+        with open(filepath, 'rb') as f:
+            while chunk := f.read(1024):
+                client_socket.sendall(chunk)
+
+        print(f"Arquivo {filename} enviado para {recipient}.")
+    except Exception as e:
+        print(f"Erro durante o envio do arquivo: {e}")
+    finally:
+        client_socket.close()
+
+def receiveFile(host='127.0.0.1', port=File_port):
+    try:
+        file_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        file_socket.connect((host, port))
+        
+        # Recebe os metadados (nome do arquivo e tamanho)
+        metadata = file_socket.recv(1024).decode('utf-8')
+        filename, file_size = metadata.split('|')
+        file_size = int(file_size)
+
+        # Pergunta ao usuário onde salvar o arquivo
+        save_path = tk.filedialog.asksaveasfilename(initialfile=filename, title="Salvar arquivo")
+        if not save_path:
+            messagebox.showinfo("Cancelado", "Recebimento do arquivo foi cancelado.")
+            file_socket.close()
+            return
+
+        with open(save_path, 'wb') as f:
+            received = 0
+            while received < file_size:
+                chunk = file_socket.recv(1024)
+                if not chunk:
+                    break
+                f.write(chunk)
+                received += len(chunk)
+
+        messagebox.showinfo("Sucesso", f"Arquivo {filename} recebido com sucesso e salvo em {save_path}.")
+    except Exception as e:
+        messagebox.showerror("Erro", f"Erro ao receber arquivo: {e}")
+    finally:
+        file_socket.close()
+
+def startFileReception():
+    threading.Thread(target=receiveFile, daemon=True).start()
 
 def encryptMessage(message):
     cipher = AES.new(KEY, AES.MODE_CBC)
@@ -178,12 +245,19 @@ def openChatWindow(username):
     
     sendButton = tk.Button(chatFrame, text="Enviar", state='disabled')
     sendButton.pack(padx=10, pady=(0, 10), side='right')
+
+    sendFileButton = tk.Button(chatFrame, text="Enviar Arquivo", command=send_file)
+    sendFileButton.pack(padx=10, pady=(0, 10), side='right')
+
+    receiveFileButton = tk.Button(chatFrame, text="Receber Arquivo", command=startFileReception)
+    receiveFileButton.pack(padx=10, pady=(0, 10), side='right')
     
     def onUserSelect(event):
         try:
             selectedUser = userListBox.get(userListBox.curselection())
             recipient_label.config(text=f"Conversa com: {selectedUser}")
             sendButton.config(state='normal', command=lambda: sendMessage(username, selectedUser, messageEntry))
+            sendFileButton.config(state='normal', command=lambda: send_file(selectedUser))
             threading.Thread(target=cleanChatBox, args=(chatText,) , daemon=True).start()     
         except tk.TclError:
             pass

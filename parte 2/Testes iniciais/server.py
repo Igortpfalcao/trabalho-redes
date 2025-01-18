@@ -140,6 +140,70 @@ def handleClient(client_socket, client_address):
             del connectedClients[username]
         client_socket.close()
 
+File_port = 5001
+
+
+def sendFileToClient(sender, recipient, filepath, host='127.0.0.1', File_port = 5001):
+    try:
+        # Verifica se o destinatário está conectado
+        if recipient in connectedClients:
+            recipient_socket = connectedClients[recipient]
+            file_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            file_socket.connect((host, File_port))
+
+            # Envia o nome e o tamanho do arquivo
+            filename = os.path.basename(filepath)
+            file_size = os.path.getsize(filepath)
+            recipient_socket.sendall(f"{filename}|{file_size}".encode('utf-8'))
+
+            # Envia o conteúdo do arquivo em partes
+            with open(filepath, 'rb') as f:
+                while True:
+                    data = f.read(1024)  # Lê 1024 bytes por vez
+                    if not data:
+                        break  # Fim do arquivo
+                    recipient_socket.sendall(data)  # Envia o bloco de dados
+
+            logEvent(f"Arquivo {filename} enviado para {recipient} com sucesso!")
+        else:
+            logEvent(f"Destinatário {recipient} não está online. Arquivo não enviado.")
+            # Se o destinatário não estiver online, você pode querer armazenar o arquivo para enviar mais tarde.
+    except Exception as e:
+        logEvent(f"Erro ao enviar arquivo para {recipient}: {e}")
+
+
+def handleFileTransfer(client_socket):
+    try:
+        metadata = client_socket.recv(1024).decode('utf-8')
+        filename, file_size = metadata.split('|')
+        file_size = int(file_size)
+
+        with open(f"received_{filename}", 'wb') as f:
+            received = 0
+            while received < file_size:
+                chunk = client_socket.recv(1024)
+                f.write(chunk)
+                received += len(chunk)
+        
+        print(f"Arquivo {filename} recebido com sucesso.")
+    except Exception as e:
+        print(f"Erro durante a transferência de arquivo: {e}")
+    finally:
+        client_socket.close()
+
+def start_file_server(host='127.0.0.1', port=File_port):
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_socket.bind((host, port))
+    server_socket.listen(5)
+    logEvent(f"Servidor de arquivos ouvindo em {host}:{port}")
+    
+    while True:
+        client_socket, client_address = server_socket.accept()
+        threading.Thread(target=handleFileTransfer, args=(client_socket,)).start()
+
+file_server_thread = threading.Thread(target=start_file_server, daemon=True)
+file_server_thread.start()
+
 def start_server(host='127.0.0.1', port=5000):
     try:
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -153,7 +217,6 @@ def start_server(host='127.0.0.1', port=5000):
             thread = threading.Thread(target=handleClient, args=(client_socket, client_address))
             thread.start()
             logEvent(f"Conexões ativas: {threading.active_count() - 1}")
-
 
     except Exception as e:
         logEvent(f"Erro no servidor: {e}")
