@@ -60,6 +60,7 @@ def login():
         messagebox.showerror("Erro", "Por favor, preencha todos os campos.")
         return
 
+
     response = sendToServer(f"LOGIN {username} {password}")
     if ('Login bem sucedido') in response:
         messagebox.showinfo("Sucesso", "Login realizado com sucesso")

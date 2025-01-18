@@ -154,6 +154,7 @@ def start_server(host='127.0.0.1', port=5000):
             thread.start()
             logEvent(f"Conexões ativas: {threading.active_count() - 1}")
 
+
     except Exception as e:
         logEvent(f"Erro no servidor: {e}")
     finally:
